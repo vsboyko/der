@@ -1,0 +1,86 @@
+$siteResolution: .06613756613vw;
+$siteResolutionMd: .3125vw;
+$mainFont: 'Poppins';
+$mainWeight: 400;
+$lineHeight1: 1.3;
+$lineHeight2: 1.27777777778;
+$lineHeight3: 1.22916666667;
+$lineHeight4: 1.39285714286;
+$lineHeightDefault: $lineHeight1;
+
+$containerWidthMd: 1294rem;
+
+$gap: 10rem;
+$gapFluid: 20rem;
+
+$radiusXs: 5rem;
+$radiusSm: 10rem;
+
+$whiteColor: #ffffff;
+$blackColor: #000000;
+$greyColor: #EAEAEA;
+$yellowColor: #D1C60C;
+$blueColor: #185A68;
+$accentColor: $blueColor;
+
+$bgSite: $whiteColor;
+
+$fontFamily: $mainFont, Open Sans, sans-serif, Arial;
+$fontColor: $blackColor;
+$fontWeight: $mainWeight;
+
+$boxShadowBlack1: 0 4px 24px rgba($blackColor, .25);
+$boxShadowBlack2: 0 6px 18px rgba($blackColor, .6);
+
+$transition: all .4s 0ms;
+
+$xl: 1340px;
+$xl-mf: $xl + 1;
+
+$lg: 1199px;
+$lg-mf: $lg + 1;
+
+$md: 991px;
+$md-mf: $md + 1;
+
+$sm: 767px;
+$sm-mf: $sm + 1;
+
+$xs: 576px;
+$xs-mf: $xs + 1;
+
+:root {
+  --fs-default: 16rem;
+  --fs-1: 48rem;
+  --fs-2: 28rem;
+  --fs-3: 26rem;
+  --fs-4: 23rem;
+  --fs-5: 20rem;
+  --fs-6: 18rem;
+  --fs-7: 16rem;
+  --fs-8: 14rem;
+  --fs-9: 12rem;
+  --fs-10: 10rem;
+  --fs-11: 9rem;
+
+  --gap: 10rem;
+  --gap-: -10rem;
+  --gap-fluid: 20rem;
+  --gap-fluid-: -20rem;
+  --gap-container: var(--gap-fluid);
+  --gap-container-: var(--gap-fluid-);
+
+  --slider-gap: 10rem;
+
+  --vh: 1vh;
+  @media (max-width: $md) {
+    --fs-default: 14rem;
+    --fs-1: 22.8rem;
+    --fs-2: 22rem;
+    --fs-3: 20rem;
+    --fs-4: 18rem;
+    --fs-5: 16rem;
+    --fs-6: 14rem;
+    --fs-7: 14rem;
+  }
+}

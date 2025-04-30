@@ -1,0 +1,52 @@
+
+@media (min-width: $md-mf) {
+  .about {
+    background: $yellowColor;
+    padding: 200rem 0 0;
+    position: relative;
+    z-index: 0;
+    &:before {
+      background: inherit;
+      width: 300vw;
+      height: 300vw;
+      content: '';
+      border-radius: 50%;
+      position: absolute;
+      top: -130rem;
+      left: -100vw;
+      pointer-events: none;
+      z-index: -1;
+    }
+  }
+}
+
+@media (max-width: $md) {
+  .about {
+    padding: 140rem 0 0;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+    &:before {
+      background: $yellowColor;
+      width: 300vw;
+      height: 300vw;
+      content: '';
+      border-radius: 50%;
+      position: absolute;
+      top: 0;
+      left: -100vw;
+      pointer-events: none;
+      z-index: -1;
+    }
+    &:after {
+      background: $yellowColor;
+      width: 100%;
+      content: '';
+      position: absolute;
+      top: 140rem;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+    }
+  }
+}
