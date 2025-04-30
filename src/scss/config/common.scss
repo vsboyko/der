@@ -242,29 +242,27 @@
 .slider-courses {
   margin: 0 -5rem;
   @media (max-width: $md) {
-    margin-right: -20rem;
-    margin-left: -20rem;
+    margin-right: -7rem;
+    margin-left: -7rem;
   }
   .swiper {
     overflow: visible;
     &-wrapper {
+      transition-timing-function: linear !important;
       overflow: visible;
     }
     &-slide {
       width: fit-content;
       padding: 0 5rem;
       @media (max-width: $md) {
-        width: 160rem;
-        padding: 0 20rem;
+        padding: 0 7rem;
       }
       &-prev {
         @media (max-width: $md) {
-          transform: rotate(-14deg) translate(6rem, 16rem);
         }
       }
       &-next {
         @media (max-width: $md) {
-          transform: rotate(14deg) translate(-6rem, 16rem);
         }
       }
       &:after {

@@ -35,6 +35,7 @@ document.addEventListener('DOMContentLoaded', function() {
     spaceBetween: 0,
     autoplay: {
       delay: 0,
+      enabled: true,
       disableOnInteraction: false,
     },
     freeMode: false,
@@ -81,7 +82,8 @@ document.addEventListener('DOMContentLoaded', function() {
         allowTouchMove: true,
         loop: true,
         autoplay: {
-          delay: 4000,
+          delay: 0,
+          enabled: true,
           disableOnInteraction: false,
         },
         on: {},
@@ -93,6 +95,7 @@ document.addEventListener('DOMContentLoaded', function() {
         allowTouchMove: false,
         autoplay: {
           delay: 0,
+          enabled: true,
           disableOnInteraction: false,
         },
       }
