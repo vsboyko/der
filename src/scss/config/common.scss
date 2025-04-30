@@ -241,9 +241,40 @@
 
 .slider-courses {
   margin: 0 -5rem;
+  transform: scaleX(-1);
+  position: relative;
   @media (max-width: $md) {
     margin-right: -7rem;
     margin-left: -7rem;
+  }
+  &:before,
+  &:after {
+    width: 180rem;
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: -220rem;
+    transform: scaleX(-1);
+    pointer-events: none;
+    z-index: 2;
+    @media (max-width: $md) {
+      width: 120rem;
+      bottom: -40rem;
+    }
+  }
+  &:before {
+    background: linear-gradient(to right, $whiteColor 4%, transparent 100%);
+    right: 0;
+    @media (max-width: $md) {
+      right: -20rem;
+    }
+  }
+  &:after {
+    background: linear-gradient(to left, $whiteColor 4%, transparent 100%);
+    left: -10rem;
+    @media (max-width: $md) {
+      left: -20rem;
+    }
   }
   .swiper {
     overflow: visible;
@@ -285,8 +316,9 @@
   }
   &__slide {
     transform: rotate(0deg) translate(0px, 0px);
-    transition: all 2s linear;
+    transition: all 4s linear;
   }
   &__card {
+    transform: scaleX(-1);
   }
 }

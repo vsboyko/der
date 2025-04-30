@@ -126,10 +126,10 @@
     bottom: 280rem;
     left: 0;
     @media (max-width: $md) {
-        margin: -20rem 0 24rem 10rem;
-        position: relative;
-        bottom: 0;
-        transform: rotate(-4deg);
+      margin: -20rem 0 24rem 10rem;
+      position: relative;
+      bottom: 0;
+      transform: scaleX(-1) rotate(1.5deg);
     }
   }
 }
