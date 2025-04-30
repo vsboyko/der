@@ -41,38 +41,41 @@ document.addEventListener('DOMContentLoaded', function() {
     freeMode: false,
     allowTouchMove: false,
     loopAdditionalSlides: 3,
-    on: {
-      slideChangeTransitionStart: function () {
-        if (window.innerWidth <= 768) return;
+on: {
+  slideChangeTransitionStart: function () {
+    this.slides.forEach((slide, index) => {
+      const slideOffset = index - this.activeIndex;
+      const offsetAbs = Math.abs(slideOffset);
 
-        this.slides.forEach((slide, index) => {
-          const slideOffset = index - this.activeIndex;
+      const baseAngle = 7;
+      const baseTranslateY = 16;
 
-          const offsetAbs = Math.abs(slideOffset);
-          const baseAngle = 7;
-          const baseTranslateY = 16;
+      const rotation = slideOffset * baseAngle * 0.8;
 
-          const rotation = slideOffset * baseAngle * 0.8;
-          const translateY = `${Math.pow(offsetAbs, 1.56) * baseTranslateY}rem`;
-          const zIndex = 100 - offsetAbs;
+      const translateMultiplier = (offsetAbs > 2) ? 1.2 : 1;
 
-          let transform = '';
+      const translateY = `${Math.pow(offsetAbs, 1.56) * baseTranslateY * translateMultiplier}rem`;
 
-          if (slideOffset !== 0) {
-            transform = `rotate(${rotation}deg) translate(0, ${translateY})`;
-          } else {
-            transform = `rotate(0deg) translate(0, 5rem)`;
-          }
+      const zIndex = 100 - offsetAbs;
 
-          slide.style.transform = transform;
-          slide.style.zIndex = zIndex;
-        });
-      },
-      slideChangeTransitionEnd: function () {
-        if (window.innerWidth <= 768) return;
-        this.emit('slideChangeTransitionStart');
-      },
-    },
+      let transform = '';
+
+      if (slideOffset !== 0) {
+        transform = `rotate(${rotation}deg) translate(0, ${translateY})`;
+      } else {
+        transform = `rotate(0deg) translate(0, 5rem)`;
+      }
+
+      slide.style.transform = transform;
+      slide.style.zIndex = zIndex;
+    });
+  },
+
+  slideChangeTransitionEnd: function () {
+    this.emit('slideChangeTransitionStart');
+  },
+},
+
 
     breakpoints: {
       0: {

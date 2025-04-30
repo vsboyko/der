@@ -285,7 +285,7 @@
   }
   &__slide {
     transform: rotate(0deg) translate(0px, 0px);
-    transition: all .8s ease-out;
+    transition: all 2s linear;
   }
   &__card {
   }
