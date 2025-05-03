@@ -1,7 +1,7 @@
 import Swiper from 'swiper';
-import { Autoplay } from 'swiper/modules';
+import { Autoplay, Navigation } from 'swiper/modules';
 
-Swiper.use([Autoplay]);
+Swiper.use([Autoplay, Navigation]);
 
 function SliderInit(sliderSelector, params) {
   const sliderElement = document.querySelector(sliderSelector);

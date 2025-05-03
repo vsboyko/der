@@ -1,0 +1,28 @@
+.reviews-grid {
+  padding: var(--section-gap-4) 0 var(--section-gap-3) 0;
+  position: relative;
+  z-index: 0;
+  @media (max-width: $md) {
+    padding-top: var(--section-gap-1);
+    padding-bottom: var(--section-gap-1);
+  }
+  &__bg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  &__container {
+  }
+  &__slider-reviews {
+  }
+  &__footer {
+    margin: var(--footer-section-gap) 0 0;
+    &-cta {
+      width: 100%;
+      max-width: 518rem;
+      margin: 0 auto;
+    }
+  }
+}

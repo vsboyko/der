@@ -15,12 +15,22 @@ $gapFluid: 20rem;
 
 $radiusXs: 5rem;
 $radiusSm: 10rem;
+$radiusSm2: 12rem;
+$radiusSemi: 15rem;
+$radiusMedium: 20rem;
+$radiusMd: 25rem;
 
 $whiteColor: #ffffff;
 $blackColor: #000000;
+$blackLightColor: #383838;
 $greyColor: #EAEAEA;
+$greyLightColor: #E9E8DF;
+$greyMediumColor: #C3C5BE;
+$greyNeutralColor: #D5D5D5;
+$greyDarkColor: #6E6E6E;
 $yellowColor: #D1C60C;
 $blueColor: #185A68;
+$blueLightColor: #187386;
 $accentColor: $blueColor;
 
 $bgSite: $whiteColor;
@@ -31,6 +41,7 @@ $fontWeight: $mainWeight;
 
 $boxShadowBlack1: 0 4px 24px rgba($blackColor, .25);
 $boxShadowBlack2: 0 6px 18px rgba($blackColor, .6);
+$boxShadowBlack3: 0 4px 8px rgba($blackColor, .2);
 
 $transition: all .4s 0ms;
 
@@ -62,6 +73,8 @@ $xs-mf: $xs + 1;
   --fs-9: 12rem;
   --fs-10: 10rem;
   --fs-11: 9rem;
+  --fs-12: 57.5rem;
+  --fs-13: 38rem;
 
   --gap: 10rem;
   --gap-: -10rem;
@@ -72,15 +85,64 @@ $xs-mf: $xs + 1;
 
   --slider-gap: 10rem;
 
+  --section-circle-gap: 140rem;
+  --section-gap-1: 140rem;
+  --section-gap-2: 60rem;
+  --section-gap-3: 100rem;
+  --section-gap-4: 180rem;
+  --section-gap-5: 200rem;
+
+  --subtitle-gap: 10rem;
+  --title-gap: 44rem;
+  --header-gap: 74rem;
+  --footer-section-gap: 74rem;
+
+  --slider-reviews-video-gap: 20rem;
+  --slider-reviews-gap: 18rem;
+  --slider-services-gap: 18rem;
+  --slider-marquee-gap: 10rem;
+  --slider-info-gap: 26rem;
+
+  --cta-md-mw: 518rem;
+
   --vh: 1vh;
+
+  --white-color: #ffffff;
+  --black-color: #000000;
+  --grey-color: #EAEAEA;
+  --yellow-color: #D1C60C;
+  --blue-color: #185A68;
+  --accent-color: var(--blue-color);
+
+  --u-box-color-accent: var(--accent-color);
   @media (max-width: $md) {
     --fs-default: 14rem;
     --fs-1: 22.8rem;
-    --fs-2: 22rem;
-    --fs-3: 20rem;
-    --fs-4: 18rem;
+    --fs-2: 20rem;
+    --fs-3: 18rem;
+    --fs-4: 16rem;
     --fs-5: 16rem;
     --fs-6: 14rem;
     --fs-7: 14rem;
+    --fs-12: 22rem;
+    --fs-13: 23.2rem;
+    
+    --subtitle-gap: 5rem;
+
+    --slider-reviews-video-gap: 0;
+    --slider-reviews-gap: 0;
+    --slider-services-gap: 12rem;
+    --slider-marquee-gap: 10rem;
+    --slider-info-gap: 12rem;
+
+    --header-gap: 40rem;
+    --footer-section-gap: 40rem;
+
+    --section-circle-gap: 60rem;
+    --section-gap-1: 60rem;
+
+    --cta-md-mw: 100%;
+
+    --title-gap: 30rem;
   }
 }

@@ -1,0 +1,134 @@
+.courses {
+  margin-bottom: -140rem;
+  padding: var(--section-gap-5) 0;
+  position: relative;
+  @media (max-width: $md) {
+    padding: var(--section-gap-1) 0 140rem;
+  }
+  &__bg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -5;
+  }
+  &__container {
+  }
+  &__block {
+    --block-gap: -52rem;
+    display: flex;
+    position: relative;
+    @media (max-width: $md) {
+      --block-gap: var(--gap-container-);
+      flex-wrap: wrap;
+    }
+    &:before {
+      background: $yellowColor;
+      content: '';
+      position: absolute;
+      top: 0;
+      right: var(--block-gap);
+      bottom: 0;
+      left: var(--block-gap);
+      border-radius: $radiusMedium;
+      z-index: -1;
+    }
+    &-wrapper {
+    }
+    &-row {
+      justify-content: center;
+    }
+    &-col {
+      @media (max-width: $md) {
+        max-width: 100%;
+        flex-basis: 100%;
+      }
+    }
+  }
+  &__slider {
+    margin: 0 18% 32rem 0;
+    @media (max-width: $md) {
+      margin: 0 var(--gap-container-) 170rem;
+    }
+  }
+  &__content {
+    max-width: 68%;
+    padding: 60rem 40rem 60rem 0;
+    flex: 0 0 68%;
+    align-self: center;
+    @media (max-width: $md) {
+      max-width: 100%;
+      padding: 40rem 0;
+      flex-basis: 100%;
+    }
+  }
+  &__title {
+    margin: 0 0 70rem;
+    font-size: var(--fs-13);
+    @media (max-width: $md) {
+      margin-bottom: var(--title-gap);
+    }
+    span:not([class]) {
+      margin: 0;
+    }
+  }
+  &__cta {
+    width: 100%;
+    max-width: var(--cta-md-mw);
+  }
+  &__media {
+    align-self: flex-end;
+    flex-grow: 1;
+    @media (max-width: $md) {
+      max-width: 100%;
+      flex-basis: 100%;
+      order: -1;
+    }
+  }
+  &__hero {
+    margin: -76rem var(--block-gap) 0 -14%;
+    user-select: none;
+    pointer-events: none;
+    position: relative;
+    z-index: 2;
+    @media (max-width: $md) {
+      margin: -130rem 0 -140rem;
+      display: flex;
+      justify-content: flex-end;
+      z-index: -2;
+    }
+    img {
+      width: 100%;
+      height: auto;
+      display: block;
+      @media (max-width: $md) {
+        width: 68%;
+      }
+    }
+  }
+  &__marquee {
+    margin: 54rem -154rem 0;
+    @media (max-width: $md) {
+      margin: 50rem var(--gap-container-);
+    }
+    &:before,
+    &:after {
+      width: 130rem;
+    }
+    &:before {
+      background: linear-gradient(-90deg, $whiteColor 20%, rgba($whiteColor, 0) 70%);
+      right: 0;
+      @media (max-width: $md) {
+        right: 0;
+      }
+    }
+    &:after {
+      background: linear-gradient(90deg, $whiteColor 20%, rgba($whiteColor, 0) 70%);
+      left: 0;
+      @media (max-width: $md) {
+        left: 0;
+      }
+    }
+  }
+}

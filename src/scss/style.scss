@@ -15,7 +15,6 @@
 @import 'config/default';
 
 /** Libraries */
-@import 'libs/animated.min';
 @import 'libs/swiper';
 @import '../../node_modules/glightbox/dist/css/glightbox';
 
@@ -28,5 +27,12 @@
 @import 'components/popup';
 @import 'components/intro';
 @import 'components/about';
+@import 'components/services';
+@import 'components/info';
+@import 'components/reviews';
+@import 'components/reviews-grid';
+@import 'components/video-section';
+@import 'components/courses';
+@import 'components/faq';
 
 /** Inclusion of styles for individual blocks and sections */

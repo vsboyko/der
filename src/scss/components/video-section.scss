@@ -1,0 +1,39 @@
+.video-section {
+  padding: var(--section-gap-2) 0 var(--section-gap-3);
+  position: relative;
+  z-index: 0;
+  @media (max-width: $md) {
+    padding: var(--section-gap-1) 0;
+  }
+  &__container {
+  }
+  &__suptitle {
+    margin: 0 0 var(--subtitle-gap);
+    text-align: center;
+  }
+  &__title {
+    margin: 0 0 var(--title-gap);
+    text-align: center;
+    @media (max-width: $md) {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }
+  }
+  &__row {
+    justify-content: center;
+    &-col {
+      @media (max-width: $md) {
+        max-width: 100%;
+        flex-basis: 100%;
+      }
+    }
+  }
+  &__el {
+  }
+  &__cta {
+    width: 100%;
+    max-width: var(--cta-md-mw);
+    margin: 50rem auto 0;
+  }
+}

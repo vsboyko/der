@@ -1,26 +1,8 @@
 .intro {
-  background-image: 
-    linear-gradient(to right, rgba($blackColor, .1) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba($blackColor, .1) 1px, transparent 1px);
-  background-size: 20rem 20rem;
   position: relative;
   z-index: 0;
   @media (max-width: $md) {
     padding-bottom: 80rem;
-  }
-  &:before {
-    background: radial-gradient(44% 50% at 50% 50%, rgba($whiteColor, 0) 0%, $whiteColor 100%);
-    width: 100vw;
-    min-width: 1512px;
-    height: 100%;
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    user-select: none;
-    pointer-events: none;
-    z-index: -1;
   }
   &__slider-circle {
     width: 1570rem;
@@ -73,26 +55,8 @@
       margin-bottom: 45rem;
     }
     span:not([class]) {
-      background: $accentColor;
-      color: $whiteColor;
-      position: relative;
-      @media (min-width: $md-mf) {
-        background: transparent;
-        display: inline-block;
-      }
-      &:before {
-        @media (min-width: $md-mf) {
-          background: url(../images/pattern-1.png) 50% / 100% 100% no-repeat;
-          content: '';
-          position: absolute;
-          top: -1rem;
-          bottom: 0;
-          right: -41rem;
-          left: -18rem;
-          pointer-events: none;
-          z-index: -1;
-        }
-      }
+      margin-right: 0;
+      margin-left: 0;
     }
   }
   &__cta {

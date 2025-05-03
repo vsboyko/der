@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
   @@include('html/head.html', {
-    'title': 'Der Verbands '
+    'title': 'Der Verbands'
   })
-  <body class="u-scrollbar">
+  <body>
 
     <div id="root" class="site">
       <div class="site__inner">
@@ -14,21 +14,21 @@
         <!-- header END -->
         <main role="main" class="site__main">
           <!-- intro BEGIN -->
-          <section class="intro">
+          <section class="bg-grid bg-grid--radial-white intro">
             <div class="container container--size-md intro__container">
               <div class="row intro__row">
                 <div class="row__col--8 intro__col intro__col--content">
                   <div class="intro__content">
-                    <p class="wow fadeIn fs-6 intro__suptitle" data-wow-delay=".25s">Für Verbände & Vereine</p>
-                    <h1 class="wow fadeIn intro__title" data-wow-delay=".4s">
+                    <p class="fs-6 intro__suptitle">Für Verbände & Vereine</p>
+                    <h1 class="text-bg-pattern intro__title">
                       Endlich den <span class="color-accent">digitalen Durchblick</span>&nbsp;erhalten als <span class="color-accent">Verband.</span> <span>Kostenfreier 4 Wochen Kurs.</span>
                     </h1>
                   </div>
-                  <form action="#" id="cta_form" class="wow fadeIn cta-form intro__cta" data-wow-delay=".55s">
+                  <form action="#" class="js-cta-form cta-form intro__cta">
                     <div class="cta-form__inner">
                       <div class="cta-form__el-wrapper">
                         <input type="email" name="cta_email" class="u-input u-input--size-md u-input--theme-grey cta-form__el is-show" required placeholder="Ihre E-Mail Adresse">
-                        <select name="cta_services" class="u-input u-input--size-md u-input--theme-grey cta-form__el" required placeholder="Ihre E-Mail Adresse">
+                        <select name="cta_services" class="u-input u-input--size-md u-input--theme-grey cta-form__el" required>
                           <option value="Выберите услугу" selected disabled>Выберите услугу</option>
                           <option value="Services 1">Services 1</option>
                           <option value="Services 1">Services 1</option>
@@ -36,7 +36,7 @@
                           <option value="Services 3">Services 3</option>
                         </select>
                       </div>
-                      <button type="submit" id="cta_form_btn" class="btn btn--theme-accent-fill btn--size-md cta-form__btn">
+                      <button type="submit" class="btn btn--theme-accent-fill btn--size-md cta-form__btn">
                         <span class="btn__inner">
                           <span class="btn__title">Kurs kostenfrei starten</span>
                         </span>
@@ -52,14 +52,14 @@
                 </picture>
               </div>
             </div>
-            <div class="slider-courses intro__slider-courses" data-wow-delay=".15s">
+            <div class="slider-courses intro__slider-courses">
               <div class="js-slider-courses-init swiper slider-courses__inner">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide slider-courses__slide">
                     <div class="courses-card slider-courses__card">
                       <div class="courses-card__content">
                         <p class="courses-card__title">
-                          <a href="images/courses-card-1@2x.jpg" class="js-glightbox courses-card__link">Woche 1: Digitalisierung 101</a>
+                          <a href="images/courses-card-1@2x.jpg" data-gallery="courses-gallery-1" class="js-glightbox courses-card__link">Woche 1: Digitalisierung 101</a>
                         </p>
                       </div>
                       <div class="courses-card__media">
@@ -74,7 +74,7 @@
                     <div class="courses-card slider-courses__card">
                       <div class="courses-card__content">
                         <p class="courses-card__title">
-                          <a href="images/courses-card-1@2x.jpg" class="js-glightbox courses-card__link">Woche 2: Verbandsstruktur</a>
+                          <a href="images/courses-card-1@2x.jpg" data-gallery="courses-gallery-1" class="js-glightbox courses-card__link">Woche 2: Verbandsstruktur</a>
                         </p>
                       </div>
                       <div class="courses-card__media">
@@ -89,7 +89,7 @@
                     <div class="courses-card slider-courses__card">
                       <div class="courses-card__content">
                         <p class="courses-card__title">
-                          <a href="images/courses-card-1@2x.jpg" class="js-glightbox courses-card__link">Woche 3: Dolor sit amet</a>
+                          <a href="images/courses-card-1@2x.jpg" data-gallery="courses-gallery-1" class="js-glightbox courses-card__link">Woche 3: Dolor sit amet</a>
                         </p>
                       </div>
                       <div class="courses-card__media">
@@ -104,7 +104,7 @@
                     <div class="courses-card slider-courses__card">
                       <div class="courses-card__content">
                         <p class="courses-card__title">
-                          <a href="images/courses-card-1@2x.jpg" class="js-glightbox courses-card__link">Woche 4: Lorem Ipsum</a>
+                          <a href="images/courses-card-1@2x.jpg" data-gallery="courses-gallery-1" class="js-glightbox courses-card__link">Woche 4: Lorem Ipsum</a>
                         </p>
                       </div>
                       <div class="courses-card__media">
@@ -119,7 +119,7 @@
                     <div class="courses-card slider-courses__card">
                       <div class="courses-card__content">
                         <p class="courses-card__title">
-                          <a href="images/courses-card-1@2x.jpg" class="js-glightbox courses-card__link">Woche 5: BONUS - Wachstumsstrategie</a>
+                          <a href="images/courses-card-1@2x.jpg" data-gallery="courses-gallery-1" class="js-glightbox courses-card__link">Woche 5: BONUS - Wachstumsstrategie</a>
                         </p>
                       </div>
                       <div class="courses-card__media">
@@ -134,7 +134,7 @@
                     <div class="courses-card slider-courses__card">
                       <div class="courses-card__content">
                         <p class="courses-card__title">
-                          <a href="images/courses-card-1@2x.jpg" class="js-glightbox courses-card__link">Woche 1: Digitalisierung 101</a>
+                          <a href="images/courses-card-1@2x.jpg" data-gallery="courses-gallery-1" class="js-glightbox courses-card__link">Woche 1: Digitalisierung 101</a>
                         </p>
                       </div>
                       <div class="courses-card__media">
@@ -149,7 +149,7 @@
                     <div class="courses-card slider-courses__card">
                       <div class="courses-card__content">
                         <p class="courses-card__title">
-                          <a href="images/courses-card-1@2x.jpg" class="js-glightbox courses-card__link">Woche 2: Verbandsstruktur</a>
+                          <a href="images/courses-card-1@2x.jpg" data-gallery="courses-gallery-1" class="js-glightbox courses-card__link">Woche 2: Verbandsstruktur</a>
                         </p>
                       </div>
                       <div class="courses-card__media">
@@ -164,7 +164,7 @@
                     <div class="courses-card slider-courses__card">
                       <div class="courses-card__content">
                         <p class="courses-card__title">
-                          <a href="images/courses-card-1@2x.jpg" class="js-glightbox courses-card__link">Woche 3: Dolor sit amet</a>
+                          <a href="images/courses-card-1@2x.jpg" data-gallery="courses-gallery-1" class="js-glightbox courses-card__link">Woche 3: Dolor sit amet</a>
                         </p>
                       </div>
                       <div class="courses-card__media">
@@ -179,7 +179,7 @@
                     <div class="courses-card slider-courses__card">
                       <div class="courses-card__content">
                         <p class="courses-card__title">
-                          <a href="images/courses-card-1@2x.jpg" class="js-glightbox courses-card__link">Woche 4: Lorem Ipsum</a>
+                          <a href="images/courses-card-1@2x.jpg" data-gallery="courses-gallery-1" class="js-glightbox courses-card__link">Woche 4: Lorem Ipsum</a>
                         </p>
                       </div>
                       <div class="courses-card__media">
@@ -194,7 +194,7 @@
                     <div class="courses-card slider-courses__card">
                       <div class="courses-card__content">
                         <p class="courses-card__title">
-                          <a href="images/courses-card-1@2x.jpg" class="js-glightbox courses-card__link">Woche 5: BONUS - Wachstumsstrategie</a>
+                          <a href="images/courses-card-1@2x.jpg" data-gallery="courses-gallery-1" class="js-glightbox courses-card__link">Woche 5: BONUS - Wachstumsstrategie</a>
                         </p>
                       </div>
                       <div class="courses-card__media">
@@ -209,7 +209,7 @@
                     <div class="courses-card slider-courses__card">
                       <div class="courses-card__content">
                         <p class="courses-card__title">
-                          <a href="images/courses-card-1@2x.jpg" class="js-glightbox courses-card__link">Woche 1: Digitalisierung 101</a>
+                          <a href="images/courses-card-1@2x.jpg" data-gallery="courses-gallery-1" class="js-glightbox courses-card__link">Woche 1: Digitalisierung 101</a>
                         </p>
                       </div>
                       <div class="courses-card__media">
@@ -224,7 +224,7 @@
                     <div class="courses-card slider-courses__card">
                       <div class="courses-card__content">
                         <p class="courses-card__title">
-                          <a href="images/courses-card-1@2x.jpg" class="js-glightbox courses-card__link">Woche 2: Verbandsstruktur</a>
+                          <a href="images/courses-card-1@2x.jpg" data-gallery="courses-gallery-1" class="js-glightbox courses-card__link">Woche 2: Verbandsstruktur</a>
                         </p>
                       </div>
                       <div class="courses-card__media">
@@ -239,7 +239,7 @@
                     <div class="courses-card slider-courses__card">
                       <div class="courses-card__content">
                         <p class="courses-card__title">
-                          <a href="images/courses-card-1@2x.jpg" class="js-glightbox courses-card__link">Woche 3: Dolor sit amet</a>
+                          <a href="images/courses-card-1@2x.jpg" data-gallery="courses-gallery-1" class="js-glightbox courses-card__link">Woche 3: Dolor sit amet</a>
                         </p>
                       </div>
                       <div class="courses-card__media">
@@ -254,7 +254,7 @@
                     <div class="courses-card slider-courses__card">
                       <div class="courses-card__content">
                         <p class="courses-card__title">
-                          <a href="images/courses-card-1@2x.jpg" class="js-glightbox courses-card__link">Woche 4: Lorem Ipsum</a>
+                          <a href="images/courses-card-1@2x.jpg" data-gallery="courses-gallery-1" class="js-glightbox courses-card__link">Woche 4: Lorem Ipsum</a>
                         </p>
                       </div>
                       <div class="courses-card__media">
@@ -269,7 +269,7 @@
                     <div class="courses-card slider-courses__card">
                       <div class="courses-card__content">
                         <p class="courses-card__title">
-                          <a href="images/courses-card-1@2x.jpg" class="js-glightbox courses-card__link">Woche 5: BONUS - Wachstumsstrategie</a>
+                          <a href="images/courses-card-1@2x.jpg" data-gallery="courses-gallery-1" class="js-glightbox courses-card__link">Woche 5: BONUS - Wachstumsstrategie</a>
                         </p>
                       </div>
                       <div class="courses-card__media">
@@ -284,7 +284,7 @@
                     <div class="courses-card slider-courses__card">
                       <div class="courses-card__content">
                         <p class="courses-card__title">
-                          <a href="images/courses-card-1@2x.jpg" class="js-glightbox courses-card__link">Woche 1: Digitalisierung 101</a>
+                          <a href="images/courses-card-1@2x.jpg" data-gallery="courses-gallery-1" class="js-glightbox courses-card__link">Woche 1: Digitalisierung 101</a>
                         </p>
                       </div>
                       <div class="courses-card__media">
@@ -299,7 +299,7 @@
                     <div class="courses-card slider-courses__card">
                       <div class="courses-card__content">
                         <p class="courses-card__title">
-                          <a href="images/courses-card-1@2x.jpg" class="js-glightbox courses-card__link">Woche 2: Verbandsstruktur</a>
+                          <a href="images/courses-card-1@2x.jpg" data-gallery="courses-gallery-1" class="js-glightbox courses-card__link">Woche 2: Verbandsstruktur</a>
                         </p>
                       </div>
                       <div class="courses-card__media">
@@ -314,7 +314,7 @@
                     <div class="courses-card slider-courses__card">
                       <div class="courses-card__content">
                         <p class="courses-card__title">
-                          <a href="images/courses-card-1@2x.jpg" class="js-glightbox courses-card__link">Woche 3: Dolor sit amet</a>
+                          <a href="images/courses-card-1@2x.jpg" data-gallery="courses-gallery-1" class="js-glightbox courses-card__link">Woche 3: Dolor sit amet</a>
                         </p>
                       </div>
                       <div class="courses-card__media">
@@ -329,7 +329,7 @@
                     <div class="courses-card slider-courses__card">
                       <div class="courses-card__content">
                         <p class="courses-card__title">
-                          <a href="images/courses-card-1@2x.jpg" class="js-glightbox courses-card__link">Woche 4: Lorem Ipsum</a>
+                          <a href="images/courses-card-1@2x.jpg" data-gallery="courses-gallery-1" class="js-glightbox courses-card__link">Woche 4: Lorem Ipsum</a>
                         </p>
                       </div>
                       <div class="courses-card__media">
@@ -344,7 +344,7 @@
                     <div class="courses-card slider-courses__card">
                       <div class="courses-card__content">
                         <p class="courses-card__title">
-                          <a href="images/courses-card-1@2x.jpg" class="js-glightbox courses-card__link">Woche 5: BONUS - Wachstumsstrategie</a>
+                          <a href="images/courses-card-1@2x.jpg" data-gallery="courses-gallery-1" class="js-glightbox courses-card__link">Woche 5: BONUS - Wachstumsstrategie</a>
                         </p>
                       </div>
                       <div class="courses-card__media">
@@ -362,36 +362,1462 @@
           </section>
           <!-- intro END -->
           <!-- about BEGIN -->
-          <section class="about">
+          <section class="section-circle about">
             <div class="container container--size-md about__container">
-              <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam maxime id iste beatae, aut? Quia sapiente suscipit deserunt ullam amet neque dicta facilis delectus adipisci nobis, similique minus distinctio quibusdam!</div>
-              <div>Esse neque itaque aliquid fugit possimus reprehenderit odit, qui cumque! Fuga cupiditate illum assumenda ex, odio incidunt, nulla praesentium at voluptate, non autem in accusantium. Quis sed quisquam vitae, ipsum.</div>
-              <div>Cumque quis nisi recusandae nam fugiat, modi dolor nostrum reprehenderit, quos, omnis laudantium tempora? Similique, consectetur, hic. Vel error ad distinctio quam facilis vitae maiores fugit, id reprehenderit ab inventore.</div>
-              <div>Alias atque quae numquam culpa delectus, nihil eaque modi explicabo omnis consequuntur voluptate blanditiis, non molestiae nobis similique rem perspiciatis? Explicabo vel eius perferendis vitae consectetur error suscipit earum. Fugiat.</div>
-              <div>Numquam non magni libero distinctio nostrum nam consequatur reprehenderit exercitationem iusto? Accusantium, saepe temporibus velit voluptatibus blanditiis! Hic saepe consequuntur labore possimus, earum eligendi deleniti vel, eaque iste velit quis.</div>
-              <div>Ex, hic. Voluptatum repellat dolore debitis repellendus expedita nostrum perspiciatis atque reprehenderit amet culpa voluptatibus sit qui voluptas, repudiandae iste impedit magni? Aperiam praesentium ratione, doloribus non cumque optio enim!</div>
-              <div>Molestias deleniti consequatur, adipisci voluptas amet. Fuga officia eos nam itaque cum tempora. Maxime incidunt veniam consequuntur error fugit reiciendis porro voluptates harum, non sequi nihil velit aliquam magnam aut.</div>
-              <div>Inventore non nulla iusto dignissimos architecto corporis quam, error nisi doloremque. Libero facere aliquid odio, sint fuga maiores corporis in ratione consequatur ducimus laboriosam vel quo at odit perspiciatis debitis!</div>
-              <div>Corporis reprehenderit quod sapiente fugit quam assumenda, ipsam vero nesciunt consequatur placeat voluptate maxime amet maiores, tempora labore magni, laboriosam eos vitae minima temporibus, quasi velit aspernatur. Officia, nostrum, at.</div>
-              <div>Ipsam adipisci libero laborum assumenda reiciendis quasi, explicabo rerum animi, laudantium ipsa soluta fuga saepe corrupti! Et reiciendis, ea inventore magni numquam hic, quidem molestias esse, ducimus deserunt eaque illum?</div>
-              <div>Officia ipsa sint expedita repellendus earum ullam, nihil vel totam ratione accusantium magnam facere voluptates, cum. Ea quibusdam, totam beatae provident quas doloribus aliquid omnis aperiam voluptatem neque? Velit, eveniet?</div>
-              <div>Itaque officia, corporis voluptas dignissimos tempora quo, sint ullam culpa exercitationem eligendi soluta, delectus quis, explicabo architecto dolorem doloremque provident quos nihil ad! Laboriosam temporibus, possimus sapiente ut tempora, dolor.</div>
-              <div>Laborum, quo modi quis ipsa tempore, id odit voluptates. Facilis, quisquam, velit. Voluptatibus laudantium distinctio repellat deserunt consectetur beatae. Error sequi, reiciendis quae ea voluptate delectus sint mollitia voluptatem, eum.</div>
-              <div>Aut impedit illum quidem in iste eveniet, nam totam temporibus reiciendis hic odio debitis laudantium reprehenderit, iure a pariatur dicta. Placeat vitae natus corporis quo quasi beatae quisquam eligendi modi!</div>
-              <div>Non porro delectus, tempore, sequi assumenda in repellat itaque sapiente repellendus aspernatur nemo soluta. Accusantium placeat ducimus illo cumque distinctio ad fugit, rerum cum, nemo repellat molestias ipsam repudiandae sapiente.</div>
-              <div>Provident minima quam tempore error fuga. Qui officia possimus optio deleniti! Sint laboriosam cumque doloremque earum quisquam excepturi deserunt explicabo quia obcaecati, delectus odit ab repudiandae esse accusantium nulla cum!</div>
-              <div>Harum quam voluptatibus voluptate, explicabo qui necessitatibus beatae animi nulla deserunt! Quam accusamus, tempora, rem veritatis similique reprehenderit mollitia enim esse ab provident, aliquam doloremque impedit vitae est. Praesentium, quam.</div>
-              <div>Beatae expedita dolore, in quos, sunt quo voluptatem, consectetur totam veniam rem magnam. Vitae tempore ipsum eos fugit, maxime accusantium necessitatibus illo repudiandae aliquid voluptatibus eius numquam perferendis possimus pariatur?</div>
-              <div>Deserunt qui iure modi soluta quod consequuntur, aperiam ab esse inventore culpa. Quasi tempore eaque ut nam doloribus mollitia incidunt temporibus magnam molestiae fugit. Deleniti eligendi similique officia atque sapiente?</div>
-              <div>Reiciendis molestias, voluptas assumenda accusantium doloribus! Natus quis quisquam ratione, fuga ea eos quam illo. Repellat, laboriosam ipsum nihil quod maiores aperiam, pariatur voluptate fuga porro sapiente, similique nemo doloremque?</div>
-              <div>Dolorem possimus esse necessitatibus aut placeat, neque, vel facere et? Temporibus eligendi perspiciatis illum quod doloremque ipsum fugiat quibusdam cupiditate voluptatibus, obcaecati veritatis mollitia at nostrum tempore. Numquam veniam, mollitia.</div>
-              <div>Cumque, aperiam soluta impedit architecto cupiditate sunt mollitia ducimus. Earum laudantium, non, dolorem amet ullam voluptatem dicta doloremque! Esse totam, excepturi aperiam nam assumenda facilis explicabo autem voluptatem laudantium corporis!</div>
-              <div>Quis eius laboriosam sit, saepe quod eos voluptas impedit pariatur dolorum dolore rerum maxime totam ratione, odio ullam at nam. Excepturi sapiente, accusantium placeat accusamus adipisci totam iste est asperiores.</div>
-              <div>Quibusdam architecto, ipsam, soluta excepturi voluptatibus cumque eos, facilis natus alias in cum praesentium qui quasi nostrum aperiam ad placeat nulla minima! Nam, eos doloremque inventore beatae! Dolore, atque, minus!</div>
-              <div>Tenetur impedit velit eligendi est ducimus quia quas, molestias natus consectetur ad dicta reprehenderit incidunt dolores, fugiat nesciunt eveniet eos, amet blanditiis unde! Numquam mollitia dolorem adipisci explicabo velit assumenda.</div>
+              <p class="text-bg-pattern about__suptitle">
+                <span>Über 500+ Kursteilnehmer aus folgenden Verbänden:</span>
+              </p>
+              <div class="slider-marquee about__marquee">
+                <div class="js-slider-marquee-init swiper slider-marquee__inner">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide slider-marquee__slide">
+                      <picture class="slider-marquee__card">
+                        <img src="images/brands/logo-1.svg" width="81" height="30" alt="brands 1">
+                      </picture>
+                    </div>
+                    <div class="swiper-slide slider-marquee__slide">
+                      <picture class="slider-marquee__card">
+                        <img src="images/brands/logo-2.svg" width="16" height="30" alt="brands 2">
+                      </picture>
+                    </div>
+                    <div class="swiper-slide slider-marquee__slide">
+                      <picture class="slider-marquee__card">
+                        <source srcset="images/brands/logo-3@2x.webp 2x, images/brands/logo-3.webp 1x" type="image/webp">
+                        <img src="images/brands/logo-3@2x.png" srcset="images/brands/logo-3@2x.png 2x, images/brands/logo-3.png 1x" width="92" height="30" alt="brands 3">
+                      </picture>
+                    </div>
+                    <div class="swiper-slide slider-marquee__slide">
+                      <picture class="slider-marquee__card">
+                        <img src="images/brands/logo-4.svg" width="126" height="30" alt="brands 4">
+                      </picture>
+                    </div>
+                    <div class="swiper-slide slider-marquee__slide">
+                      <picture class="slider-marquee__card">
+                        <source srcset="images/brands/logo-5@2x.webp 2x, images/brands/logo-5.webp 1x" type="image/webp">
+                        <img src="images/brands/logo-5@2x.png" srcset="images/brands/logo-5@2x.png 2x, images/brands/logo-5.png 1x" width="64" height="30" alt="brands 5">
+                      </picture>
+                    </div>
+                    <div class="swiper-slide slider-marquee__slide">
+                      <picture class="slider-marquee__card">
+                        <img src="images/brands/logo-1.svg" width="81" height="30" alt="brands 1">
+                      </picture>
+                    </div>
+                    <div class="swiper-slide slider-marquee__slide">
+                      <picture class="slider-marquee__card">
+                        <img src="images/brands/logo-2.svg" width="16" height="30" alt="brands 2">
+                      </picture>
+                    </div>
+                    <div class="swiper-slide slider-marquee__slide">
+                      <picture class="slider-marquee__card">
+                        <source srcset="images/brands/logo-3@2x.webp 2x, images/brands/logo-3.webp 1x" type="image/webp">
+                        <img src="images/brands/logo-3@2x.png" srcset="images/brands/logo-3@2x.png 2x, images/brands/logo-3.png 1x" width="92" height="30" alt="brands 3">
+                      </picture>
+                    </div>
+                    <div class="swiper-slide slider-marquee__slide">
+                      <picture class="slider-marquee__card">
+                        <img src="images/brands/logo-4.svg" width="126" height="30" alt="brands 4">
+                      </picture>
+                    </div>
+                    <div class="swiper-slide slider-marquee__slide">
+                      <picture class="slider-marquee__card">
+                        <source srcset="images/brands/logo-5@2x.webp 2x, images/brands/logo-5.webp 1x" type="image/webp">
+                        <img src="images/brands/logo-5@2x.png" srcset="images/brands/logo-5@2x.png 2x, images/brands/logo-5.png 1x" width="64" height="30" alt="brands 5">
+                      </picture>
+                    </div>
+                    <div class="swiper-slide slider-marquee__slide">
+                      <picture class="slider-marquee__card">
+                        <img src="images/brands/logo-1.svg" width="81" height="30" alt="brands 1">
+                      </picture>
+                    </div>
+                    <div class="swiper-slide slider-marquee__slide">
+                      <picture class="slider-marquee__card">
+                        <img src="images/brands/logo-2.svg" width="16" height="30" alt="brands 2">
+                      </picture>
+                    </div>
+                    <div class="swiper-slide slider-marquee__slide">
+                      <picture class="slider-marquee__card">
+                        <source srcset="images/brands/logo-3@2x.webp 2x, images/brands/logo-3.webp 1x" type="image/webp">
+                        <img src="images/brands/logo-3@2x.png" srcset="images/brands/logo-3@2x.png 2x, images/brands/logo-3.png 1x" width="92" height="30" alt="brands 3">
+                      </picture>
+                    </div>
+                    <div class="swiper-slide slider-marquee__slide">
+                      <picture class="slider-marquee__card">
+                        <img src="images/brands/logo-4.svg" width="126" height="30" alt="brands 4">
+                      </picture>
+                    </div>
+                    <div class="swiper-slide slider-marquee__slide">
+                      <picture class="slider-marquee__card">
+                        <source srcset="images/brands/logo-5@2x.webp 2x, images/brands/logo-5.webp 1x" type="image/webp">
+                        <img src="images/brands/logo-5@2x.png" srcset="images/brands/logo-5@2x.png 2x, images/brands/logo-5.png 1x" width="64" height="30" alt="brands 5">
+                      </picture>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row about__row">
+                <div class="row__col--6 about__col about__col--content">
+                  <div class="about__content">
+                    <div class="d-md-block about__media">
+                      <picture class="about__picture">
+                        <source srcset="images/about-hero-1@2x.webp 2x, images/about-hero-1.webp 1x" type="image/webp">
+                        <img src="images/about-hero-1@2x.jpg" srcset="images/about-hero-1@2x.jpg 2x, images/about-hero-1.jpg 1x" width="510" height="744" alt="Sie wissen nicht, wie sie digitalisieren sollen.">
+                      </picture>
+                    </div>
+                    <h3 class="fs-6 color-accent about__subtitle">Das Problem der meisten Verbände:</h3>
+                    <h2 class="about__title">Sie wissen nicht, wie sie digitalisieren sollen.</h2>
+                    <div class="about__list">
+                      <article class="about-card about__list-card">
+                        <div class="about-card__inner">
+                          <picture class="about-card__picture">
+                            <img src="images/icons/about-card-1.svg" width="28" height="28" alt="Nunc gravida convallis">
+                          </picture>
+                          <div class="about-card__content">
+                            <h3 class="fs-4 about-card__title"><strong>Nunc gravida convallis</strong>. In urna. sodales. vitae volutpat felis, gravida vitae adipiscing ex vehicula, Donec felis, facilisis lobortis, Nam sapien Donec in in</h3>
+                          </div>
+                        </div>
+                      </article>
+                      <article class="about-card about__list-card">
+                        <div class="about-card__inner">
+                          <picture class="about-card__picture">
+                            <img src="images/icons/about-card-2.svg" width="28" height="28" alt="Nunc gravida convallis">
+                          </picture>
+                          <div class="about-card__content">
+                            <h3 class="fs-4 about-card__title"><strong>Nunc gravida convallis</strong>. In urna. sodales. vitae volutpat felis, gravida vitae adipiscing ex vehicula, Donec felis, facilisis lobortis, Nam sapien Donec in in</h3>
+                          </div>
+                        </div>
+                      </article>
+                      <article class="about-card about__list-card">
+                        <div class="about-card__inner">
+                          <picture class="about-card__picture">
+                            <img src="images/icons/about-card-3.svg" width="28" height="28" alt="Nunc gravida convallis">
+                          </picture>
+                          <div class="about-card__content">
+                            <h3 class="fs-4 about-card__title"><strong>Nunc gravida convallis</strong>. In urna. sodales. vitae volutpat felis, gravida vitae adipiscing ex vehicula, Donec felis, facilisis lobortis, Nam sapien Donec in in</h3>
+                          </div>
+                        </div>
+                      </article>
+                    </div>
+                    <form action="#" class="js-cta-form cta-form about__cta">
+                      <div class="cta-form__inner">
+                        <div class="cta-form__el-wrapper">
+                          <input type="email" name="cta_email" class="u-input u-input--size-md u-input--theme-grey cta-form__el is-show" required placeholder="Ihre E-Mail Adresse">
+                          <select name="cta_services" class="u-input u-input--size-md u-input--theme-grey cta-form__el" required>
+                            <option value="Выберите услугу" selected disabled>Выберите услугу</option>
+                            <option value="Services 1">Services 1</option>
+                            <option value="Services 1">Services 1</option>
+                            <option value="Services 2">Services 2</option>
+                            <option value="Services 3">Services 3</option>
+                          </select>
+                        </div>
+                        <button type="submit" i class="btn btn--theme-accent-fill btn--size-md cta-form__btn">
+                          <span class="btn__inner">
+                            <span class="btn__title">Kurs kostenfrei starten</span>
+                          </span>
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+                <div class="d-md-none row__col--5 about__col about__col--media">
+                  <div class="about__media">
+                    <picture class="about__picture">
+                      <source srcset="images/about-hero-1@2x.webp 2x, images/about-hero-1.webp 1x" type="image/webp">
+                      <img src="images/about-hero-1@2x.jpg" srcset="images/about-hero-1@2x.jpg 2x, images/about-hero-1.jpg 1x" width="510" height="744" alt="Sie wissen nicht, wie sie digitalisieren sollen.">
+                    </picture>
+                  </div>
+                </div>
+              </div>
             </div>
           </section>
           <!-- about END -->
+          <!-- services BEGIN -->
+          <section class="services">
+            <div class="bg-grid bg-grid--radial-white services__bg"></div>
+            <div class="container container--size-md services__container">
+              <header class="services__header">
+                <h3 class="fs-6 color-accent services__suptitle">Hier kommt die Lösung:</h3>
+                <h2 class="text-bg-pattern services__title">Sie brauchen folgende Bausteine <span>für Ihre Digitalisierung.</span></h2>
+              </header>
+              <div class="services__house">
+                <div class="services__house-header">
+                  <h2 class="services__house-title">Digitalisierung</h2>
+                </div>
+                <div class="slider-services services__house-slider">
+                  <div class="js-slider-services-init swiper slider-services__inner">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide slider-services__slide">
+                        <article class="u-box services__house-card" style="--u-box-color-accent: #EF754A;">
+                          <span class="box-border u-box__border"></span>
+                          <div class="u-box__inner">
+                            <span class="u-box__counter"></span>
+                            <div class="u-box__content">
+                              <h3 class="u-box__title">Keyword 1</h3>
+                              <div class="u-content u-box__text">
+                                <p>Ein Satz hier Lorem Ipsum dolor sit amet.</p>
+                              </div>
+                            </div>
+                          </div>
+                        </article>
+                      </div>
+                      <div class="swiper-slide slider-services__slide">
+                        <article class="u-box services__house-card" style="--u-box-color-accent: #956D98;">
+                          <span class="box-border u-box__border"></span>
+                          <div class="u-box__inner">
+                            <span class="u-box__counter"></span>
+                            <div class="u-box__content">
+                              <h3 class="u-box__title">Keyword 1</h3>
+                              <div class="u-content u-box__text">
+                                <p>Ein Satz hier Lorem Ipsum dolor sit amet.</p>
+                              </div>
+                            </div>
+                          </div>
+                        </article>
+                      </div>
+                      <div class="swiper-slide slider-services__slide">
+                        <article class="u-box services__house-card" style="--u-box-color-accent: #405C72;">
+                          <span class="box-border u-box__border"></span>
+                          <div class="u-box__inner">
+                            <span class="u-box__counter"></span>
+                            <div class="u-box__content">
+                              <h3 class="u-box__title">Keyword 1</h3>
+                              <div class="u-content u-box__text">
+                                <p>Ein Satz hier Lorem Ipsum dolor sit amet.</p>
+                              </div>
+                            </div>
+                          </div>
+                        </article>
+                      </div>
+                      <div class="swiper-slide slider-services__slide">
+                        <article class="u-box services__house-card" style="--u-box-color-accent: #535353;">
+                          <span class="box-border u-box__border"></span>
+                          <div class="u-box__inner">
+                            <span class="u-box__counter"></span>
+                            <div class="u-box__content">
+                              <h3 class="u-box__title">Keyword 1</h3>
+                              <div class="u-content u-box__text">
+                                <p>Ein Satz hier Lorem Ipsum dolor sit amet.</p>
+                              </div>
+                            </div>
+                          </div>
+                        </article>
+                      </div>
+                      <div class="swiper-slide slider-services__slide">
+                        <article class="u-box services__house-card" style="--u-box-color-accent: #EF754A;">
+                          <span class="box-border u-box__border"></span>
+                          <div class="u-box__inner">
+                            <span class="u-box__counter"></span>
+                            <div class="u-box__content">
+                              <h3 class="u-box__title">Keyword 1</h3>
+                              <div class="u-content u-box__text">
+                                <p>Ein Satz hier Lorem Ipsum dolor sit amet.</p>
+                              </div>
+                            </div>
+                          </div>
+                        </article>
+                      </div>
+                      <div class="swiper-slide slider-services__slide">
+                        <article class="u-box services__house-card" style="--u-box-color-accent: #535353;">
+                          <span class="box-border u-box__border"></span>
+                          <div class="u-box__inner">
+                            <span class="u-box__counter"></span>
+                            <div class="u-box__content">
+                              <h3 class="u-box__title">Keyword 1</h3>
+                              <div class="u-content u-box__text">
+                                <p>Ein Satz hier Lorem Ipsum dolor sit amet.</p>
+                              </div>
+                            </div>
+                          </div>
+                        </article>
+                      </div>
+                      <div class="swiper-slide slider-services__slide">
+                        <article class="u-box services__house-card" style="--u-box-color-accent: #405C72;">
+                          <span class="box-border u-box__border"></span>
+                          <div class="u-box__inner">
+                            <span class="u-box__counter"></span>
+                            <div class="u-box__content">
+                              <h3 class="u-box__title">Keyword 1</h3>
+                              <div class="u-content u-box__text">
+                                <p>Ein Satz hier Lorem Ipsum dolor sit amet.</p>
+                              </div>
+                            </div>
+                          </div>
+                        </article>
+                      </div>
+                      <div class="swiper-slide slider-services__slide">
+                        <article class="u-box services__house-card" style="--u-box-color-accent: #956D98;">
+                          <span class="box-border u-box__border"></span>
+                          <div class="u-box__inner">
+                            <span class="u-box__counter"></span>
+                            <div class="u-box__content">
+                              <h3 class="u-box__title">Keyword 1</h3>
+                              <div class="u-content u-box__text">
+                                <p>Ein Satz hier Lorem Ipsum dolor sit amet.</p>
+                              </div>
+                            </div>
+                          </div>
+                        </article>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="services__house-border">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+              </div>
+              <footer class="services__footer">
+                <div class="u-content services__footer-text">
+                  <p><strong>Nunc gravida convallis</strong>. In urna. sodales. vitae volutpat felis, gravida vitae adipiscing ex vehicula, Donec felis, facilisis lobortis, Nam sapien Donec in in</p>
+                </div>
+                <form action="#" class="js-cta-form cta-form services__footer-cta">
+                  <div class="cta-form__inner">
+                    <div class="cta-form__el-wrapper">
+                      <input type="email" name="cta_email" class="u-input u-input--size-md u-input--theme-grey cta-form__el is-show" required placeholder="Ihre E-Mail Adresse">
+                      <select name="cta_services" class="u-input u-input--size-md u-input--theme-grey cta-form__el" required>
+                        <option value="Выберите услугу" selected disabled>Выберите услугу</option>
+                        <option value="Services 1">Services 1</option>
+                        <option value="Services 1">Services 1</option>
+                        <option value="Services 2">Services 2</option>
+                        <option value="Services 3">Services 3</option>
+                      </select>
+                    </div>
+                    <button type="submit" class="btn btn--theme-accent-fill btn--size-md cta-form__btn">
+                      <span class="btn__inner">
+                        <span class="btn__title">Bausteine sichern</span>
+                      </span>
+                    </button>
+                  </div>
+                </form>
+              </footer>
+            </div>
+          </section>
+          <!-- services END -->
+          <!-- info BEGIN -->
+          <section class="section-circle info">
+            <div class="container container--size-md info__container">
+              <header class="info__header">
+                <h3 class="fs-6 color-accent info__subtitle">Diese Bausteine:</h3>
+                <h2 class="info__title">Werden Sie in unserem kostenfreien Kurs in 8 Wochen lernen:</h2>
+              </header>
+              <div class="slider-info info__slider">
+                <div class="js-slider-services-init swiper slider-info__inner">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide slider-info__slide">
+                      <article class="u-box u-box--size-md info__list-card" style="--u-box-color-accent: #EF754A;">
+                        <span class="box-border u-box__border"></span>
+                        <div class="u-box__inner">
+                          <span class="u-box__counter"></span>
+                          <div class="u-box__content">
+                            <div class="u-content u-box__description">
+                              <p><strong>Nunc gravida convallis</strong>. In urna. sodales. vitae volutpat felis, gravida vitae adipiscing ex vehicula, Donec felis, facilisis lobortis, Nam sapien Donec in in</p>
+                            </div>
+                          </div>
+                        </div>
+                      </article>
+                    </div>
+                    <div class="swiper-slide slider-info__slide">
+                      <article class="u-box u-box--size-md info__list-card" style="--u-box-color-accent: #956D98;">
+                        <span class="box-border u-box__border"></span>
+                        <div class="u-box__inner">
+                          <span class="u-box__counter"></span>
+                          <div class="u-box__content">
+                            <div class="u-content u-box__description">
+                              <p><strong>Nunc gravida convallis</strong>. In urna. sodales. vitae volutpat felis, gravida vitae adipiscing ex vehicula, Donec felis, facilisis lobortis, Nam sapien Donec in in</p>
+                            </div>
+                          </div>
+                        </div>
+                      </article>
+                    </div>
+                    <div class="swiper-slide slider-info__slide">
+                      <article class="u-box u-box--size-md info__list-card" style="--u-box-color-accent: #405C72;">
+                        <span class="box-border u-box__border"></span>
+                        <div class="u-box__inner">
+                          <span class="u-box__counter"></span>
+                          <div class="u-box__content">
+                            <div class="u-content u-box__description">
+                              <p><strong>Nunc gravida convallis</strong>. In urna. sodales. vitae volutpat felis, gravida vitae adipiscing ex vehicula, Donec felis, facilisis lobortis, Nam sapien Donec in in</p>
+                            </div>
+                          </div>
+                        </div>
+                      </article>
+                    </div>
+                    <div class="swiper-slide slider-info__slide">
+                      <article class="u-box u-box--size-md info__list-card" style="--u-box-color-accent: #535353;">
+                        <span class="box-border u-box__border"></span>
+                        <div class="u-box__inner">
+                          <span class="u-box__counter"></span>
+                          <div class="u-box__content">
+                            <div class="u-content u-box__description">
+                              <p><strong>Nunc gravida convallis</strong>. In urna. sodales. vitae volutpat felis, gravida vitae adipiscing ex vehicula, Donec felis, facilisis lobortis, Nam sapien Donec in in</p>
+                            </div>
+                          </div>
+                        </div>
+                      </article>
+                    </div>
+                    <div class="swiper-slide slider-info__slide">
+                      <article class="u-box u-box--size-md info__list-card" style="--u-box-color-accent: #EF754A;">
+                        <span class="box-border u-box__border"></span>
+                        <div class="u-box__inner">
+                          <span class="u-box__counter"></span>
+                          <div class="u-box__content">
+                            <div class="u-content u-box__description">
+                              <p><strong>Nunc gravida convallis</strong>. In urna. sodales. vitae volutpat felis, gravida vitae adipiscing ex vehicula, Donec felis, facilisis lobortis, Nam sapien Donec in in</p>
+                            </div>
+                          </div>
+                        </div>
+                      </article>
+                    </div>
+                    <div class="swiper-slide slider-info__slide">
+                      <article class="u-box u-box--size-md info__list-card" style="--u-box-color-accent: #535353;">
+                        <span class="box-border u-box__border"></span>
+                        <div class="u-box__inner">
+                          <span class="u-box__counter"></span>
+                          <div class="u-box__content">
+                            <div class="u-content u-box__description">
+                              <p><strong>Nunc gravida convallis</strong>. In urna. sodales. vitae volutpat felis, gravida vitae adipiscing ex vehicula, Donec felis, facilisis lobortis, Nam sapien Donec in in</p>
+                            </div>
+                          </div>
+                        </div>
+                      </article>
+                    </div>
+                    <div class="swiper-slide slider-info__slide">
+                      <article class="u-box u-box--size-md info__list-card" style="--u-box-color-accent: #405C72;">
+                        <span class="box-border u-box__border"></span>
+                        <div class="u-box__inner">
+                          <span class="u-box__counter"></span>
+                          <div class="u-box__content">
+                            <div class="u-content u-box__description">
+                              <p><strong>Nunc gravida convallis</strong>. In urna. sodales. vitae volutpat felis, gravida vitae adipiscing ex vehicula, Donec felis, facilisis lobortis, Nam sapien Donec in in</p>
+                            </div>
+                          </div>
+                        </div>
+                      </article>
+                    </div>
+                    <div class="swiper-slide slider-info__slide">
+                      <article class="u-box u-box--size-md info__list-card" style="--u-box-color-accent: #956D98;">
+                        <span class="box-border u-box__border"></span>
+                        <div class="u-box__inner">
+                          <span class="u-box__counter"></span>
+                          <div class="u-box__content">
+                            <div class="u-content u-box__description">
+                              <p><strong>Nunc gravida convallis</strong>. In urna. sodales. vitae volutpat felis, gravida vitae adipiscing ex vehicula, Donec felis, facilisis lobortis, Nam sapien Donec in in</p>
+                            </div>
+                          </div>
+                        </div>
+                      </article>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <footer class="info__footer">
+                <div class="gallery-link info__footer-gallery">
+                  <div class="gallery-link__header">
+                    <a href="images/gallery-media-1@2x.jpg" data-gallery="gallery-link" class="js-glightbox gallery-link__title">Gallerie mit Kursinhalten anzegen</a>
+                    <a href="images/gallery-media-2@2x.jpg" data-gallery="gallery-link" class="js-glightbox d-none">&nbsp;</a>
+                  </div>
+                  <div class="gallery-link__media">
+                    <picture class="gallery-link__picture">
+                      <source srcset="images/gallery-media-1@2x.webp 2x, images/gallery-media-1.webp 1x" type="image/webp">
+                      <img src="images/gallery-media-1@2x.jpg" srcset="images/gallery-media-1@2x.jpg 2x, images/gallery-media-1.jpg 1x" width="290" height="57" alt="Gallerie mit Kursinhalten anzegen">
+                    </picture>
+                  </div>
+                </div>
+                <form action="#" class="js-cta-form cta-form info__footer-cta">
+                  <div class="cta-form__inner">
+                    <div class="cta-form__el-wrapper">
+                      <input type="email" name="cta_email" class="u-input u-input--size-md u-input--theme-grey cta-form__el is-show" required placeholder="Ihre E-Mail Adresse">
+                      <select name="cta_services" class="u-input u-input--size-md u-input--theme-grey cta-form__el" required>
+                        <option value="Выберите услугу" selected disabled>Выберите услугу</option>
+                        <option value="Services 1">Services 1</option>
+                        <option value="Services 1">Services 1</option>
+                        <option value="Services 2">Services 2</option>
+                        <option value="Services 3">Services 3</option>
+                      </select>
+                    </div>
+                    <button type="submit" class="btn btn--theme-accent-fill btn--size-md cta-form__btn">
+                      <span class="btn__inner">
+                        <span class="btn__title">Bausteine sichern</span>
+                      </span>
+                    </button>
+                  </div>
+                </form>
+              </footer>
+            </div>
+          </section>
+          <!-- info END -->
+          <!-- reviews BEGIN -->
+          <section class="reviews">
+            <div class="bg-grid bg-grid--radial-white reviews__bg"></div>
+            <div class="container container--size-md reviews__container">
+              <header class="reviews__header">
+                <h3 class="fs-6 color-accent reviews__suptitle">Meinungen</h3>
+                <h2 class="text-bg-pattern reviews__title">Das sagen  <span>unsere Kunden:</span></h2>
+              </header>
+              <div class="slider-reviews-video reviews__slider-reviews-video">
+                <div class="js-slider-reviews-video-init swiper slider-reviews-video__inner">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide slider-reviews-video__slide">
+                      <div class="reviews-video-card slider-reviews-video__card">
+                        <div class="reviews-video-card__media">
+                          <picture class="reviews-video-card__img">
+                            <source srcset="images/reviews-video-card-1@2x.webp 2x, images/reviews-video-card-1.webp 1x" type="image/webp">
+                            <img src="images/reviews-video-card-1@2x.jpg" srcset="images/reviews-video-card-1@2x.jpg 2x, images/reviews-video-card-1.jpg 1x" width="350" height="300" alt="Martin Müller">
+                          </picture>
+                          <a href="static/video/video-1.mp4" class="js-glightbox btn-play reviews-video-card__link">&nbsp;</a>
+                        </div>
+                        <div class="reviews-video-card__content">
+                          <h3 class="reviews-video-card__name">Martin Müller</h3>
+                          <p class="fs-3 reviews-video-card__position">Müller GmbH</p>
+                          <div class="u-content reviews-video-card__text">
+                            <p><strong>“Nunc gravida convallis</strong>. In urna. sodales. vitae volutpat felis, gravida vitae adipiscing ex vehicula, Donec felis, facilisis lobortis, Nam sapien Donec in in. In urna. sodales. vitae volutpat felis, gravida vitae adipiscing ex vehicula, Donec felis, facilisis lobortis, Nam sapien Donec in in“</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide slider-reviews-video__slide">
+                      <div class="reviews-video-card slider-reviews-video__card">
+                        <div class="reviews-video-card__media">
+                          <picture class="reviews-video-card__img">
+                            <source srcset="images/reviews-video-card-1@2x.webp 2x, images/reviews-video-card-1.webp 1x" type="image/webp">
+                            <img src="images/reviews-video-card-1@2x.jpg" srcset="images/reviews-video-card-1@2x.jpg 2x, images/reviews-video-card-1.jpg 1x" width="350" height="300" alt="Martin Müller">
+                          </picture>
+                          <a href="static/video/video-1.mp4" class="js-glightbox btn-play reviews-video-card__link">&nbsp;</a>
+                        </div>
+                        <div class="reviews-video-card__content">
+                          <h3 class="reviews-video-card__name">Martin Müller</h3>
+                          <p class="fs-3 reviews-video-card__position">Müller GmbH</p>
+                          <div class="u-content reviews-video-card__text">
+                            <p><strong>“Nunc gravida convallis</strong>. In urna. sodales. vitae volutpat felis, gravida vitae adipiscing ex vehicula, Donec felis, facilisis lobortis, Nam sapien Donec in in. In urna. sodales. vitae volutpat felis, gravida vitae adipiscing ex vehicula, Donec felis, facilisis lobortis, Nam sapien Donec in in“</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide slider-reviews-video__slide">
+                      <div class="reviews-video-card slider-reviews-video__card">
+                        <div class="reviews-video-card__media">
+                          <picture class="reviews-video-card__img">
+                            <source srcset="images/reviews-video-card-1@2x.webp 2x, images/reviews-video-card-1.webp 1x" type="image/webp">
+                            <img src="images/reviews-video-card-1@2x.jpg" srcset="images/reviews-video-card-1@2x.jpg 2x, images/reviews-video-card-1.jpg 1x" width="350" height="300" alt="Martin Müller">
+                          </picture>
+                          <a href="static/video/video-1.mp4" class="js-glightbox btn-play reviews-video-card__link">&nbsp;</a>
+                        </div>
+                        <div class="reviews-video-card__content">
+                          <h3 class="reviews-video-card__name">Martin Müller</h3>
+                          <p class="fs-3 reviews-video-card__position">Müller GmbH</p>
+                          <div class="u-content reviews-video-card__text">
+                            <p><strong>“Nunc gravida convallis</strong>. In urna. sodales. vitae volutpat felis, gravida vitae adipiscing ex vehicula, Donec felis, facilisis lobortis, Nam sapien Donec in in. In urna. sodales. vitae volutpat felis, gravida vitae adipiscing ex vehicula, Donec felis, facilisis lobortis, Nam sapien Donec in in“</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide slider-reviews-video__slide">
+                      <div class="reviews-video-card slider-reviews-video__card">
+                        <div class="reviews-video-card__media">
+                          <picture class="reviews-video-card__img">
+                            <source srcset="images/reviews-video-card-1@2x.webp 2x, images/reviews-video-card-1.webp 1x" type="image/webp">
+                            <img src="images/reviews-video-card-1@2x.jpg" srcset="images/reviews-video-card-1@2x.jpg 2x, images/reviews-video-card-1.jpg 1x" width="350" height="300" alt="Martin Müller">
+                          </picture>
+                          <a href="static/video/video-1.mp4" class="js-glightbox btn-play reviews-video-card__link">&nbsp;</a>
+                        </div>
+                        <div class="reviews-video-card__content">
+                          <h3 class="reviews-video-card__name">Martin Müller</h3>
+                          <p class="fs-3 reviews-video-card__position">Müller GmbH</p>
+                          <div class="u-content reviews-video-card__text">
+                            <p><strong>“Nunc gravida convallis</strong>. In urna. sodales. vitae volutpat felis, gravida vitae adipiscing ex vehicula, Donec felis, facilisis lobortis, Nam sapien Donec in in. In urna. sodales. vitae volutpat felis, gravida vitae adipiscing ex vehicula, Donec felis, facilisis lobortis, Nam sapien Donec in in“</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <button type="button" class="js-slider-reviews-video-prev swiper-button swiper-button-prev">prev</button>
+                <button type="button" class="js-slider-reviews-video-next swiper-button swiper-button-next">next</button>
+              </div>
+              <footer class="reviews__footer">
+                <form action="#" class="js-cta-form cta-form reviews__footer-cta">
+                  <div class="cta-form__inner">
+                    <div class="cta-form__el-wrapper">
+                      <input type="email" name="cta_email" class="u-input u-input--size-md u-input--theme-grey cta-form__el is-show" required placeholder="Ihre E-Mail Adresse">
+                      <select name="cta_services" class="u-input u-input--size-md u-input--theme-grey cta-form__el" required>
+                        <option value="Выберите услугу" selected disabled>Выберите услугу</option>
+                        <option value="Services 1">Services 1</option>
+                        <option value="Services 1">Services 1</option>
+                        <option value="Services 2">Services 2</option>
+                        <option value="Services 3">Services 3</option>
+                      </select>
+                    </div>
+                    <button type="submit" class="btn btn--theme-accent-fill btn--size-md cta-form__btn">
+                      <span class="btn__inner">
+                        <span class="btn__title">Kurs kostenfrei starten</span>
+                      </span>
+                    </button>
+                  </div>
+                </form>
+              </footer>
+            </div>
+          </section>
+          <!-- reviews END -->
+          <!-- reviews-grid BEGIN -->
+          <section class="section-circle reviews-grid">
+            <div class="container container--size-md reviews-grid__container">
+              <h2 class="visually-hidden">Bewertungen über uns</h2>
+              <div class="slider-reviews reviews-grid__slider-reviews">
+                <div class="js-slider-reviews-init swiper slider-reviews__inner">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide slider-reviews__slide">
+                      <div class="reviews-card slider-reviews__card">
+                        <div class="reviews-card__header">
+                          <div class="reviews-card__avatar-wrapper">
+                            <div class="box-border reviews-card__avatar-border"></div>
+                            <picture class="reviews-card__avatar">
+                              <source srcset="images/reviews-video-card-1@2x.webp 2x, images/reviews-video-card-1.webp 1x" type="image/webp">
+                              <img src="images/reviews-video-card-1@2x.jpg" srcset="images/reviews-video-card-1@2x.jpg 2x, images/reviews-video-card-1.jpg 1x" width="68" height="68" alt="Martin Müller">
+                            </picture>
+                          </div>
+                          <div class="reviews-card__info">
+                            <h3 class="fs-6 reviews-card__name">Martin Müller</h3>
+                            <p class="fs-6 reviews-card__position">Müller GmbH</p>
+                          </div>
+                        </div>
+                        <div class="reviews-card__content">
+                          <div class="u-content reviews-card__text">
+                            <p><strong>“Nunc gravida convallis</strong>. In urna. sodales. vitae volutpat felis, gravida vitae adipiscing ex vehicula, Donec felis, facilisis lobortis, Nam sapien Donec in in. In urna. sodales. vitae volutpat felis, gravida vitae adipiscing ex vehicula, Donec felis, facilisis lobortis, Nam sapien Donec in in“</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide slider-reviews__slide">
+                      <div class="reviews-card slider-reviews__card">
+                        <div class="reviews-card__header">
+                          <div class="reviews-card__avatar-wrapper">
+                            <div class="box-border reviews-card__avatar-border"></div>
+                            <picture class="reviews-card__avatar">
+                              <source srcset="images/reviews-video-card-1@2x.webp 2x, images/reviews-video-card-1.webp 1x" type="image/webp">
+                              <img src="images/reviews-video-card-1@2x.jpg" srcset="images/reviews-video-card-1@2x.jpg 2x, images/reviews-video-card-1.jpg 1x" width="68" height="68" alt="Martin Müller">
+                            </picture>
+                          </div>
+                          <div class="reviews-card__info">
+                            <h3 class="fs-6 reviews-card__name">Martin Müller</h3>
+                            <p class="fs-6 reviews-card__position">Müller GmbH</p>
+                          </div>
+                        </div>
+                        <div class="reviews-card__content">
+                          <div class="u-content reviews-card__text">
+                            <p><strong>“Nunc gravida convallis</strong>. In urna. sodales. vitae volutpat felis, gravida vitae adipiscing ex vehicula, Donec felis, facilisis lobortis, Nam sapien Donec in in. In urna. sodales. vitae volutpat felis, gravida vitae adipiscing ex vehicula, Donec felis, facilisis lobortis, Nam sapien Donec in in“</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide slider-reviews__slide">
+                      <div class="reviews-card slider-reviews__card">
+                        <div class="reviews-card__header">
+                          <div class="reviews-card__avatar-wrapper">
+                            <div class="box-border reviews-card__avatar-border"></div>
+                            <picture class="reviews-card__avatar">
+                              <source srcset="images/reviews-video-card-1@2x.webp 2x, images/reviews-video-card-1.webp 1x" type="image/webp">
+                              <img src="images/reviews-video-card-1@2x.jpg" srcset="images/reviews-video-card-1@2x.jpg 2x, images/reviews-video-card-1.jpg 1x" width="68" height="68" alt="Martin Müller">
+                            </picture>
+                          </div>
+                          <div class="reviews-card__info">
+                            <h3 class="fs-6 reviews-card__name">Martin Müller</h3>
+                            <p class="fs-6 reviews-card__position">Müller GmbH</p>
+                          </div>
+                        </div>
+                        <div class="reviews-card__content">
+                          <div class="u-content reviews-card__text">
+                            <p><strong>“Nunc gravida convallis</strong>. In urna. sodales. vitae volutpat felis, gravida vitae adipiscing ex vehicula, Donec felis, facilisis lobortis, Nam sapien Donec in in. In urna. sodales. vitae volutpat felis, gravida vitae adipiscing ex vehicula, Donec felis, facilisis lobortis, Nam sapien Donec in in“</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide slider-reviews__slide">
+                      <div class="reviews-card slider-reviews__card">
+                        <div class="reviews-card__header">
+                          <div class="reviews-card__avatar-wrapper">
+                            <div class="box-border reviews-card__avatar-border"></div>
+                            <picture class="reviews-card__avatar">
+                              <source srcset="images/reviews-video-card-1@2x.webp 2x, images/reviews-video-card-1.webp 1x" type="image/webp">
+                              <img src="images/reviews-video-card-1@2x.jpg" srcset="images/reviews-video-card-1@2x.jpg 2x, images/reviews-video-card-1.jpg 1x" width="68" height="68" alt="Martin Müller">
+                            </picture>
+                          </div>
+                          <div class="reviews-card__info">
+                            <h3 class="fs-6 reviews-card__name">Martin Müller</h3>
+                            <p class="fs-6 reviews-card__position">Müller GmbH</p>
+                          </div>
+                        </div>
+                        <div class="reviews-card__content">
+                          <div class="u-content reviews-card__text">
+                            <p><strong>“Nunc gravida convallis</strong>. In urna. sodales. vitae volutpat felis, gravida vitae adipiscing ex vehicula, Donec felis, facilisis lobortis, Nam sapien Donec in in. In urna. sodales. vitae volutpat felis, gravida vitae adipiscing ex vehicula, Donec felis, facilisis lobortis, Nam sapien Donec in in“</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide slider-reviews__slide">
+                      <div class="reviews-card slider-reviews__card">
+                        <div class="reviews-card__header">
+                          <div class="reviews-card__avatar-wrapper">
+                            <div class="box-border reviews-card__avatar-border"></div>
+                            <picture class="reviews-card__avatar">
+                              <source srcset="images/reviews-video-card-1@2x.webp 2x, images/reviews-video-card-1.webp 1x" type="image/webp">
+                              <img src="images/reviews-video-card-1@2x.jpg" srcset="images/reviews-video-card-1@2x.jpg 2x, images/reviews-video-card-1.jpg 1x" width="68" height="68" alt="Martin Müller">
+                            </picture>
+                          </div>
+                          <div class="reviews-card__info">
+                            <h3 class="fs-6 reviews-card__name">Martin Müller</h3>
+                            <p class="fs-6 reviews-card__position">Müller GmbH</p>
+                          </div>
+                        </div>
+                        <div class="reviews-card__content">
+                          <div class="u-content reviews-card__text">
+                            <p><strong>“Nunc gravida convallis</strong>. In urna. sodales. vitae volutpat felis, gravida vitae adipiscing ex vehicula, Donec felis, facilisis lobortis, Nam sapien Donec in in. In urna. sodales. vitae volutpat felis, gravida vitae adipiscing ex vehicula, Donec felis, facilisis lobortis, Nam sapien Donec in in“</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide slider-reviews__slide">
+                      <div class="reviews-card slider-reviews__card">
+                        <div class="reviews-card__header">
+                          <div class="reviews-card__avatar-wrapper">
+                            <div class="box-border reviews-card__avatar-border"></div>
+                            <picture class="reviews-card__avatar">
+                              <source srcset="images/reviews-video-card-1@2x.webp 2x, images/reviews-video-card-1.webp 1x" type="image/webp">
+                              <img src="images/reviews-video-card-1@2x.jpg" srcset="images/reviews-video-card-1@2x.jpg 2x, images/reviews-video-card-1.jpg 1x" width="68" height="68" alt="Martin Müller">
+                            </picture>
+                          </div>
+                          <div class="reviews-card__info">
+                            <h3 class="fs-6 reviews-card__name">Martin Müller</h3>
+                            <p class="fs-6 reviews-card__position">Müller GmbH</p>
+                          </div>
+                        </div>
+                        <div class="reviews-card__content">
+                          <div class="u-content reviews-card__text">
+                            <p><strong>“Nunc gravida convallis</strong>. In urna. sodales. vitae volutpat felis, gravida vitae adipiscing ex vehicula, Donec felis, facilisis lobortis, Nam sapien Donec in in. In urna. sodales. vitae volutpat felis, gravida vitae adipiscing ex vehicula, Donec felis, facilisis lobortis, Nam sapien Donec in in“</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <button type="button" class="js-slider-reviews-prev swiper-button swiper-button-prev">prev</button>
+                  <button type="button" class="js-slider-reviews-next swiper-button swiper-button-next">next</button>
+                </div>
+              </div>
+              <footer class="reviews-grid__footer">
+                <form action="#" class="js-cta-form cta-form reviews-grid__footer-cta">
+                  <div class="cta-form__inner">
+                    <div class="cta-form__el-wrapper">
+                      <input type="email" name="cta_email" class="u-input u-input--size-md u-input--theme-grey cta-form__el is-show" required placeholder="Ihre E-Mail Adresse">
+                      <select name="cta_services" class="u-input u-input--size-md u-input--theme-grey cta-form__el" required>
+                        <option value="Выберите услугу" selected disabled>Выберите услугу</option>
+                        <option value="Services 1">Services 1</option>
+                        <option value="Services 1">Services 1</option>
+                        <option value="Services 2">Services 2</option>
+                        <option value="Services 3">Services 3</option>
+                      </select>
+                    </div>
+                    <button type="submit" class="btn btn--theme-accent-fill btn--size-md cta-form__btn">
+                      <span class="btn__inner">
+                        <span class="btn__title">Kurs kostenfrei starten</span>
+                      </span>
+                    </button>
+                  </div>
+                </form>
+              </footer>
+            </div>
+          </section>
+          <!-- reviews-grid END -->
+          <!-- about BEGIN -->
+          <section class="about about--info">
+            <div class="bg-grid bg-grid--radial-white about__bg"></div>
+            <div class="container container--size-md about__container">
+              <div class="row about__row">
+                <div class="row__col--5 about__col about__col--media">
+                  <div class="about__media">
+                    <picture class="about__picture">
+                      <source srcset="images/about-hero-2@2x.webp 2x, images/about-hero-2.webp 1x" type="image/webp">
+                      <img src="images/about-hero-2@2x.jpg" srcset="images/about-hero-2@2x.jpg 2x, images/about-hero-2.jpg 1x" width="510" height="949" alt="Sie wissen nicht, wie sie digitalisieren sollen.">
+                    </picture>
+                  </div>
+                </div>
+                <div class="row__col--6 about__col about__col--content">
+                  <div class="about__content">
+                    <h3 class="fs-6 color-accent about__subtitle">Jonathan Hildebrand</h3>
+                    <h2 class="about__title">Wer ist der Verbandsflüsterer?</h2>
+                    <div class="fs-4 u-content about__text">
+                      <p><strong>Nunc gravida convallis</strong>. In urna. sodales. vitae volutpat felis, gravida vitae adipiscing ex vehicula, Donec felis, facilisis lobortis, Nam sapien Donec in in. sodales. vitae volutpat felis, gravida vitae adipiscing ex vehicula, Donec felis, facilisis lobortis, Nam sapien Donec in in sodales. vitae volutpat felis, gravida vitae adipiscing ex vehicula, Donec felis, facilisis lobortis, Nam sapien Donec in in</p>
+                    </div>
+                    <form action="#" class="js-cta-form cta-form about__cta">
+                      <div class="cta-form__inner">
+                        <div class="cta-form__el-wrapper">
+                          <input type="email" name="cta_email" class="u-input u-input--size-md u-input--theme-grey cta-form__el is-show" required placeholder="Ihre E-Mail Adresse">
+                          <select name="cta_services" class="u-input u-input--size-md u-input--theme-grey cta-form__el" required>
+                            <option value="Выберите услугу" selected disabled>Выберите услугу</option>
+                            <option value="Services 1">Services 1</option>
+                            <option value="Services 1">Services 1</option>
+                            <option value="Services 2">Services 2</option>
+                            <option value="Services 3">Services 3</option>
+                          </select>
+                        </div>
+                        <button type="submit" i class="btn btn--theme-accent-fill btn--size-md cta-form__btn">
+                          <span class="btn__inner">
+                            <span class="btn__title">Kurs kostenfrei starten</span>
+                          </span>
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- about END -->
+          <!-- video-section BEGIN -->
+          <section class="section-circle video-section">
+            <div class="container container--size-md video-section__container">
+              <h3 class="fs-6 color-accent video-section__suptitle">Video</h3>
+              <h2 class="text-bg-pattern video-section__title">Schauen Sie sich  <span>dieses Video an.</span></h2>
+              <div class="row video-section__row">
+                <div class="row__col--10 video-section__row-col">
+                  <div class="js-video u-video video-section__el">
+                    <div class="u-video__media">
+                      <video loop playsinline controls poster="images/video-placeholder-1.jpg">
+                        <source src="static/video/video-1.mp4" type="video/mp4">
+                        <source src="static/video/video-1.webm" type="video/webm">
+                      </video>
+                    </div>
+                    <button type="button" class="js-video-btn-play btn-play u-video__btn-play">Play</button>
+                  </div>
+                </div>
+              </div>
+              <form action="#" class="js-cta-form cta-form video-section__cta">
+                <div class="cta-form__inner">
+                  <div class="cta-form__el-wrapper">
+                    <input type="email" name="cta_email" class="u-input u-input--size-md u-input--theme-grey cta-form__el is-show" required placeholder="Ihre E-Mail Adresse">
+                    <select name="cta_services" class="u-input u-input--size-md u-input--theme-grey cta-form__el" required>
+                      <option value="Выберите услугу" selected disabled>Выберите услугу</option>
+                      <option value="Services 1">Services 1</option>
+                      <option value="Services 1">Services 1</option>
+                      <option value="Services 2">Services 2</option>
+                      <option value="Services 3">Services 3</option>
+                    </select>
+                  </div>
+                  <button type="submit" class="btn btn--theme-accent-fill btn--size-md cta-form__btn">
+                    <span class="btn__inner">
+                      <span class="btn__title">Kurs kostenfrei starten</span>
+                    </span>
+                  </button>
+                </div>
+              </form>
+            </div>
+          </section>
+          <!-- video-section END -->
+          <!-- courses BEGIN -->
+          <section class="courses">
+            <div class="bg-grid bg-grid--radial-white courses__bg"></div>
+            <div class="container container--size-md courses__container">
+              <div class="courses__block-wrapper">
+                <div class="row courses__block-row">
+                  <div class="row__col--10 courses__block-col">
+                    <div class="slider-courses-typical courses__slider">
+                      <div class="js-slider-courses-typical-init swiper slider-courses-typical__inner">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide slider-courses-typical__slide">
+                            <div class="courses-card slider-courses-typical__card">
+                              <div class="courses-card__content">
+                                <p class="courses-card__title">
+                                  <a href="images/courses-card-1@2x.jpg" data-gallery="courses-gallery-2" class="js-glightbox courses-card__link">Woche 1: Digitalisierung 101</a>
+                                </p>
+                              </div>
+                              <div class="courses-card__media">
+                                <picture class="courses-card__img">
+                                  <source srcset="images/courses-card-1@2x.webp 2x, images/courses-card-1.webp 1x" type="image/webp">
+                                  <img src="images/courses-card-1@2x.jpg" srcset="images/courses-card-1@2x.jpg 2x, images/courses-card-1.jpg 1x" width="136" height="85" alt="Woche 1: Digitalisierung 101">
+                                </picture>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide slider-courses-typical__slide">
+                            <div class="courses-card slider-courses-typical__card">
+                              <div class="courses-card__content">
+                                <p class="courses-card__title">
+                                  <a href="images/courses-card-1@2x.jpg" data-gallery="courses-gallery-2" class="js-glightbox courses-card__link">Woche 2: Verbandsstruktur</a>
+                                </p>
+                              </div>
+                              <div class="courses-card__media">
+                                <picture class="courses-card__img">
+                                  <source srcset="images/courses-card-1@2x.webp 2x, images/courses-card-1.webp 1x" type="image/webp">
+                                  <img src="images/courses-card-1@2x.jpg" srcset="images/courses-card-1@2x.jpg 2x, images/courses-card-1.jpg 1x" width="136" height="85" alt="Woche 2: Verbandsstruktur">
+                                </picture>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide slider-courses-typical__slide">
+                            <div class="courses-card slider-courses-typical__card">
+                              <div class="courses-card__content">
+                                <p class="courses-card__title">
+                                  <a href="images/courses-card-1@2x.jpg" data-gallery="courses-gallery-2" class="js-glightbox courses-card__link">Woche 3: Dolor sit amet</a>
+                                </p>
+                              </div>
+                              <div class="courses-card__media">
+                                <picture class="courses-card__img">
+                                  <source srcset="images/courses-card-1@2x.webp 2x, images/courses-card-1.webp 1x" type="image/webp">
+                                  <img src="images/courses-card-1@2x.jpg" srcset="images/courses-card-1@2x.jpg 2x, images/courses-card-1.jpg 1x" width="136" height="85" alt="Woche 3: Dolor sit amet">
+                                </picture>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide slider-courses-typical__slide">
+                            <div class="courses-card slider-courses-typical__card">
+                              <div class="courses-card__content">
+                                <p class="courses-card__title">
+                                  <a href="images/courses-card-1@2x.jpg" data-gallery="courses-gallery-2" class="js-glightbox courses-card__link">Woche 4: Lorem Ipsum</a>
+                                </p>
+                              </div>
+                              <div class="courses-card__media">
+                                <picture class="courses-card__img">
+                                  <source srcset="images/courses-card-1@2x.webp 2x, images/courses-card-1.webp 1x" type="image/webp">
+                                  <img src="images/courses-card-1@2x.jpg" srcset="images/courses-card-1@2x.jpg 2x, images/courses-card-1.jpg 1x" width="136" height="85" alt="Woche 4: Lorem Ipsum">
+                                </picture>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide slider-courses-typical__slide">
+                            <div class="courses-card slider-courses-typical__card">
+                              <div class="courses-card__content">
+                                <p class="courses-card__title">
+                                  <a href="images/courses-card-1@2x.jpg" data-gallery="courses-gallery-2" class="js-glightbox courses-card__link">Woche 5: BONUS - Wachstumsstrategie</a>
+                                </p>
+                              </div>
+                              <div class="courses-card__media">
+                                <picture class="courses-card__img">
+                                  <source srcset="images/courses-card-1@2x.webp 2x, images/courses-card-1.webp 1x" type="image/webp">
+                                  <img src="images/courses-card-1@2x.jpg" srcset="images/courses-card-1@2x.jpg 2x, images/courses-card-1.jpg 1x" width="136" height="85" alt="Woche 5: BONUS - Wachstumsstrategie">
+                                </picture>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide slider-courses-typical__slide">
+                            <div class="courses-card slider-courses-typical__card">
+                              <div class="courses-card__content">
+                                <p class="courses-card__title">
+                                  <a href="images/courses-card-1@2x.jpg" data-gallery="courses-gallery-2" class="js-glightbox courses-card__link">Woche 1: Digitalisierung 101</a>
+                                </p>
+                              </div>
+                              <div class="courses-card__media">
+                                <picture class="courses-card__img">
+                                  <source srcset="images/courses-card-1@2x.webp 2x, images/courses-card-1.webp 1x" type="image/webp">
+                                  <img src="images/courses-card-1@2x.jpg" srcset="images/courses-card-1@2x.jpg 2x, images/courses-card-1.jpg 1x" width="136" height="85" alt="Woche 1: Digitalisierung 101">
+                                </picture>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide slider-courses-typical__slide">
+                            <div class="courses-card slider-courses-typical__card">
+                              <div class="courses-card__content">
+                                <p class="courses-card__title">
+                                  <a href="images/courses-card-1@2x.jpg" data-gallery="courses-gallery-2" class="js-glightbox courses-card__link">Woche 2: Verbandsstruktur</a>
+                                </p>
+                              </div>
+                              <div class="courses-card__media">
+                                <picture class="courses-card__img">
+                                  <source srcset="images/courses-card-1@2x.webp 2x, images/courses-card-1.webp 1x" type="image/webp">
+                                  <img src="images/courses-card-1@2x.jpg" srcset="images/courses-card-1@2x.jpg 2x, images/courses-card-1.jpg 1x" width="136" height="85" alt="Woche 2: Verbandsstruktur">
+                                </picture>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide slider-courses-typical__slide">
+                            <div class="courses-card slider-courses-typical__card">
+                              <div class="courses-card__content">
+                                <p class="courses-card__title">
+                                  <a href="images/courses-card-1@2x.jpg" data-gallery="courses-gallery-2" class="js-glightbox courses-card__link">Woche 3: Dolor sit amet</a>
+                                </p>
+                              </div>
+                              <div class="courses-card__media">
+                                <picture class="courses-card__img">
+                                  <source srcset="images/courses-card-1@2x.webp 2x, images/courses-card-1.webp 1x" type="image/webp">
+                                  <img src="images/courses-card-1@2x.jpg" srcset="images/courses-card-1@2x.jpg 2x, images/courses-card-1.jpg 1x" width="136" height="85" alt="Woche 3: Dolor sit amet">
+                                </picture>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide slider-courses-typical__slide">
+                            <div class="courses-card slider-courses-typical__card">
+                              <div class="courses-card__content">
+                                <p class="courses-card__title">
+                                  <a href="images/courses-card-1@2x.jpg" data-gallery="courses-gallery-2" class="js-glightbox courses-card__link">Woche 4: Lorem Ipsum</a>
+                                </p>
+                              </div>
+                              <div class="courses-card__media">
+                                <picture class="courses-card__img">
+                                  <source srcset="images/courses-card-1@2x.webp 2x, images/courses-card-1.webp 1x" type="image/webp">
+                                  <img src="images/courses-card-1@2x.jpg" srcset="images/courses-card-1@2x.jpg 2x, images/courses-card-1.jpg 1x" width="136" height="85" alt="Woche 4: Lorem Ipsum">
+                                </picture>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide slider-courses-typical__slide">
+                            <div class="courses-card slider-courses-typical__card">
+                              <div class="courses-card__content">
+                                <p class="courses-card__title">
+                                  <a href="images/courses-card-1@2x.jpg" data-gallery="courses-gallery-2" class="js-glightbox courses-card__link">Woche 5: BONUS - Wachstumsstrategie</a>
+                                </p>
+                              </div>
+                              <div class="courses-card__media">
+                                <picture class="courses-card__img">
+                                  <source srcset="images/courses-card-1@2x.webp 2x, images/courses-card-1.webp 1x" type="image/webp">
+                                  <img src="images/courses-card-1@2x.jpg" srcset="images/courses-card-1@2x.jpg 2x, images/courses-card-1.jpg 1x" width="136" height="85" alt="Woche 5: BONUS - Wachstumsstrategie">
+                                </picture>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide slider-courses-typical__slide">
+                            <div class="courses-card slider-courses-typical__card">
+                              <div class="courses-card__content">
+                                <p class="courses-card__title">
+                                  <a href="images/courses-card-1@2x.jpg" data-gallery="courses-gallery-2" class="js-glightbox courses-card__link">Woche 1: Digitalisierung 101</a>
+                                </p>
+                              </div>
+                              <div class="courses-card__media">
+                                <picture class="courses-card__img">
+                                  <source srcset="images/courses-card-1@2x.webp 2x, images/courses-card-1.webp 1x" type="image/webp">
+                                  <img src="images/courses-card-1@2x.jpg" srcset="images/courses-card-1@2x.jpg 2x, images/courses-card-1.jpg 1x" width="136" height="85" alt="Woche 1: Digitalisierung 101">
+                                </picture>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide slider-courses-typical__slide">
+                            <div class="courses-card slider-courses-typical__card">
+                              <div class="courses-card__content">
+                                <p class="courses-card__title">
+                                  <a href="images/courses-card-1@2x.jpg" data-gallery="courses-gallery-2" class="js-glightbox courses-card__link">Woche 2: Verbandsstruktur</a>
+                                </p>
+                              </div>
+                              <div class="courses-card__media">
+                                <picture class="courses-card__img">
+                                  <source srcset="images/courses-card-1@2x.webp 2x, images/courses-card-1.webp 1x" type="image/webp">
+                                  <img src="images/courses-card-1@2x.jpg" srcset="images/courses-card-1@2x.jpg 2x, images/courses-card-1.jpg 1x" width="136" height="85" alt="Woche 2: Verbandsstruktur">
+                                </picture>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide slider-courses-typical__slide">
+                            <div class="courses-card slider-courses-typical__card">
+                              <div class="courses-card__content">
+                                <p class="courses-card__title">
+                                  <a href="images/courses-card-1@2x.jpg" data-gallery="courses-gallery-2" class="js-glightbox courses-card__link">Woche 3: Dolor sit amet</a>
+                                </p>
+                              </div>
+                              <div class="courses-card__media">
+                                <picture class="courses-card__img">
+                                  <source srcset="images/courses-card-1@2x.webp 2x, images/courses-card-1.webp 1x" type="image/webp">
+                                  <img src="images/courses-card-1@2x.jpg" srcset="images/courses-card-1@2x.jpg 2x, images/courses-card-1.jpg 1x" width="136" height="85" alt="Woche 3: Dolor sit amet">
+                                </picture>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide slider-courses-typical__slide">
+                            <div class="courses-card slider-courses-typical__card">
+                              <div class="courses-card__content">
+                                <p class="courses-card__title">
+                                  <a href="images/courses-card-1@2x.jpg" data-gallery="courses-gallery-2" class="js-glightbox courses-card__link">Woche 4: Lorem Ipsum</a>
+                                </p>
+                              </div>
+                              <div class="courses-card__media">
+                                <picture class="courses-card__img">
+                                  <source srcset="images/courses-card-1@2x.webp 2x, images/courses-card-1.webp 1x" type="image/webp">
+                                  <img src="images/courses-card-1@2x.jpg" srcset="images/courses-card-1@2x.jpg 2x, images/courses-card-1.jpg 1x" width="136" height="85" alt="Woche 4: Lorem Ipsum">
+                                </picture>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide slider-courses-typical__slide">
+                            <div class="courses-card slider-courses-typical__card">
+                              <div class="courses-card__content">
+                                <p class="courses-card__title">
+                                  <a href="images/courses-card-1@2x.jpg" data-gallery="courses-gallery-2" class="js-glightbox courses-card__link">Woche 5: BONUS - Wachstumsstrategie</a>
+                                </p>
+                              </div>
+                              <div class="courses-card__media">
+                                <picture class="courses-card__img">
+                                  <source srcset="images/courses-card-1@2x.webp 2x, images/courses-card-1.webp 1x" type="image/webp">
+                                  <img src="images/courses-card-1@2x.jpg" srcset="images/courses-card-1@2x.jpg 2x, images/courses-card-1.jpg 1x" width="136" height="85" alt="Woche 5: BONUS - Wachstumsstrategie">
+                                </picture>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide slider-courses-typical__slide">
+                            <div class="courses-card slider-courses-typical__card">
+                              <div class="courses-card__content">
+                                <p class="courses-card__title">
+                                  <a href="images/courses-card-1@2x.jpg" data-gallery="courses-gallery-2" class="js-glightbox courses-card__link">Woche 1: Digitalisierung 101</a>
+                                </p>
+                              </div>
+                              <div class="courses-card__media">
+                                <picture class="courses-card__img">
+                                  <source srcset="images/courses-card-1@2x.webp 2x, images/courses-card-1.webp 1x" type="image/webp">
+                                  <img src="images/courses-card-1@2x.jpg" srcset="images/courses-card-1@2x.jpg 2x, images/courses-card-1.jpg 1x" width="136" height="85" alt="Woche 1: Digitalisierung 101">
+                                </picture>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide slider-courses-typical__slide">
+                            <div class="courses-card slider-courses-typical__card">
+                              <div class="courses-card__content">
+                                <p class="courses-card__title">
+                                  <a href="images/courses-card-1@2x.jpg" data-gallery="courses-gallery-2" class="js-glightbox courses-card__link">Woche 2: Verbandsstruktur</a>
+                                </p>
+                              </div>
+                              <div class="courses-card__media">
+                                <picture class="courses-card__img">
+                                  <source srcset="images/courses-card-1@2x.webp 2x, images/courses-card-1.webp 1x" type="image/webp">
+                                  <img src="images/courses-card-1@2x.jpg" srcset="images/courses-card-1@2x.jpg 2x, images/courses-card-1.jpg 1x" width="136" height="85" alt="Woche 2: Verbandsstruktur">
+                                </picture>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide slider-courses-typical__slide">
+                            <div class="courses-card slider-courses-typical__card">
+                              <div class="courses-card__content">
+                                <p class="courses-card__title">
+                                  <a href="images/courses-card-1@2x.jpg" data-gallery="courses-gallery-2" class="js-glightbox courses-card__link">Woche 3: Dolor sit amet</a>
+                                </p>
+                              </div>
+                              <div class="courses-card__media">
+                                <picture class="courses-card__img">
+                                  <source srcset="images/courses-card-1@2x.webp 2x, images/courses-card-1.webp 1x" type="image/webp">
+                                  <img src="images/courses-card-1@2x.jpg" srcset="images/courses-card-1@2x.jpg 2x, images/courses-card-1.jpg 1x" width="136" height="85" alt="Woche 3: Dolor sit amet">
+                                </picture>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide slider-courses-typical__slide">
+                            <div class="courses-card slider-courses-typical__card">
+                              <div class="courses-card__content">
+                                <p class="courses-card__title">
+                                  <a href="images/courses-card-1@2x.jpg" data-gallery="courses-gallery-2" class="js-glightbox courses-card__link">Woche 4: Lorem Ipsum</a>
+                                </p>
+                              </div>
+                              <div class="courses-card__media">
+                                <picture class="courses-card__img">
+                                  <source srcset="images/courses-card-1@2x.webp 2x, images/courses-card-1.webp 1x" type="image/webp">
+                                  <img src="images/courses-card-1@2x.jpg" srcset="images/courses-card-1@2x.jpg 2x, images/courses-card-1.jpg 1x" width="136" height="85" alt="Woche 4: Lorem Ipsum">
+                                </picture>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide slider-courses-typical__slide">
+                            <div class="courses-card slider-courses-typical__card">
+                              <div class="courses-card__content">
+                                <p class="courses-card__title">
+                                  <a href="images/courses-card-1@2x.jpg" data-gallery="courses-gallery-2" class="js-glightbox courses-card__link">Woche 5: BONUS - Wachstumsstrategie</a>
+                                </p>
+                              </div>
+                              <div class="courses-card__media">
+                                <picture class="courses-card__img">
+                                  <source srcset="images/courses-card-1@2x.webp 2x, images/courses-card-1.webp 1x" type="image/webp">
+                                  <img src="images/courses-card-1@2x.jpg" srcset="images/courses-card-1@2x.jpg 2x, images/courses-card-1.jpg 1x" width="136" height="85" alt="Woche 5: BONUS - Wachstumsstrategie">
+                                </picture>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="courses__block">
+                      <div class="courses__content">
+                        <h2 class="text-bg-pattern courses__title">Endlich den <span class="color-accent">digitalen Durchblick</span>&nbsp;erhalten als <span class="color-accent">Verband.</span> <span>Kostenfreier 4 Wochen Kurs.</span></h2>
+                        <form action="#" class="js-cta-form cta-form courses__cta">
+                          <div class="cta-form__inner">
+                            <div class="cta-form__el-wrapper">
+                              <input type="email" name="cta_email" class="u-input u-input--size-md u-input--theme-grey cta-form__el is-show" required placeholder="Ihre E-Mail Adresse">
+                              <select name="cta_services" class="u-input u-input--size-md u-input--theme-grey cta-form__el" required>
+                                <option value="Выберите услугу" selected disabled>Выберите услугу</option>
+                                <option value="Services 1">Services 1</option>
+                                <option value="Services 1">Services 1</option>
+                                <option value="Services 2">Services 2</option>
+                                <option value="Services 3">Services 3</option>
+                              </select>
+                            </div>
+                            <button type="submit" class="btn btn--theme-accent-fill btn--size-md cta-form__btn">
+                              <span class="btn__inner">
+                                <span class="btn__title">Kurs kostenfrei starten</span>
+                              </span>
+                            </button>
+                          </div>
+                        </form>
+                      </div>
+                      <div class="courses__media">
+                        <picture class="courses__hero">
+                          <source srcset="images/intro-hero.webp" type="image/webp">
+                          <img src="images/intro-hero.png" alt="Endlich den digitalen Durchblick erhalten als Verband. Kostenfreier 4 Wochen Kurs." width="532" height="722">
+                        </picture>
+                      </div>
+                    </div>
+                    <div class="slider-marquee courses__marquee">
+                      <div class="js-slider-marquee-init swiper slider-marquee__inner">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide slider-marquee__slide">
+                            <picture class="slider-marquee__card">
+                              <img src="images/brands/logo-1.svg" width="81" height="30" alt="brands 1">
+                            </picture>
+                          </div>
+                          <div class="swiper-slide slider-marquee__slide">
+                            <picture class="slider-marquee__card">
+                              <img src="images/brands/logo-2.svg" width="16" height="30" alt="brands 2">
+                            </picture>
+                          </div>
+                          <div class="swiper-slide slider-marquee__slide">
+                            <picture class="slider-marquee__card">
+                              <source srcset="images/brands/logo-3@2x.webp 2x, images/brands/logo-3.webp 1x" type="image/webp">
+                              <img src="images/brands/logo-3@2x.png" srcset="images/brands/logo-3@2x.png 2x, images/brands/logo-3.png 1x" width="92" height="30" alt="brands 3">
+                            </picture>
+                          </div>
+                          <div class="swiper-slide slider-marquee__slide">
+                            <picture class="slider-marquee__card">
+                              <img src="images/brands/logo-4.svg" width="126" height="30" alt="brands 4">
+                            </picture>
+                          </div>
+                          <div class="swiper-slide slider-marquee__slide">
+                            <picture class="slider-marquee__card">
+                              <source srcset="images/brands/logo-5@2x.webp 2x, images/brands/logo-5.webp 1x" type="image/webp">
+                              <img src="images/brands/logo-5@2x.png" srcset="images/brands/logo-5@2x.png 2x, images/brands/logo-5.png 1x" width="64" height="30" alt="brands 5">
+                            </picture>
+                          </div>
+                          <div class="swiper-slide slider-marquee__slide">
+                            <picture class="slider-marquee__card">
+                              <img src="images/brands/logo-1.svg" width="81" height="30" alt="brands 1">
+                            </picture>
+                          </div>
+                          <div class="swiper-slide slider-marquee__slide">
+                            <picture class="slider-marquee__card">
+                              <img src="images/brands/logo-2.svg" width="16" height="30" alt="brands 2">
+                            </picture>
+                          </div>
+                          <div class="swiper-slide slider-marquee__slide">
+                            <picture class="slider-marquee__card">
+                              <source srcset="images/brands/logo-3@2x.webp 2x, images/brands/logo-3.webp 1x" type="image/webp">
+                              <img src="images/brands/logo-3@2x.png" srcset="images/brands/logo-3@2x.png 2x, images/brands/logo-3.png 1x" width="92" height="30" alt="brands 3">
+                            </picture>
+                          </div>
+                          <div class="swiper-slide slider-marquee__slide">
+                            <picture class="slider-marquee__card">
+                              <img src="images/brands/logo-4.svg" width="126" height="30" alt="brands 4">
+                            </picture>
+                          </div>
+                          <div class="swiper-slide slider-marquee__slide">
+                            <picture class="slider-marquee__card">
+                              <source srcset="images/brands/logo-5@2x.webp 2x, images/brands/logo-5.webp 1x" type="image/webp">
+                              <img src="images/brands/logo-5@2x.png" srcset="images/brands/logo-5@2x.png 2x, images/brands/logo-5.png 1x" width="64" height="30" alt="brands 5">
+                            </picture>
+                          </div>
+                          <div class="swiper-slide slider-marquee__slide">
+                            <picture class="slider-marquee__card">
+                              <img src="images/brands/logo-1.svg" width="81" height="30" alt="brands 1">
+                            </picture>
+                          </div>
+                          <div class="swiper-slide slider-marquee__slide">
+                            <picture class="slider-marquee__card">
+                              <img src="images/brands/logo-2.svg" width="16" height="30" alt="brands 2">
+                            </picture>
+                          </div>
+                          <div class="swiper-slide slider-marquee__slide">
+                            <picture class="slider-marquee__card">
+                              <source srcset="images/brands/logo-3@2x.webp 2x, images/brands/logo-3.webp 1x" type="image/webp">
+                              <img src="images/brands/logo-3@2x.png" srcset="images/brands/logo-3@2x.png 2x, images/brands/logo-3.png 1x" width="92" height="30" alt="brands 3">
+                            </picture>
+                          </div>
+                          <div class="swiper-slide slider-marquee__slide">
+                            <picture class="slider-marquee__card">
+                              <img src="images/brands/logo-4.svg" width="126" height="30" alt="brands 4">
+                            </picture>
+                          </div>
+                          <div class="swiper-slide slider-marquee__slide">
+                            <picture class="slider-marquee__card">
+                              <source srcset="images/brands/logo-5@2x.webp 2x, images/brands/logo-5.webp 1x" type="image/webp">
+                              <img src="images/brands/logo-5@2x.png" srcset="images/brands/logo-5@2x.png 2x, images/brands/logo-5.png 1x" width="64" height="30" alt="brands 5">
+                            </picture>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- courses END -->
+          <!-- faq BEGIN -->
+          <section class="section-circle faq">
+            <div class="container container--size-md faq__container">
+              <h3 class="fs-6 color-accent faq__suptitle">FAQ</h3>
+              <h2 class="text-bg-pattern faq__title">All Ihre Fragen beantwortet:</h2>
+              <div class="faq__body">
+                <div itemscope itemtype="https://schema.org/FAQPage" class="faq__list">
+                  <article class="faq-card faq__list-card is-show" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                    <div class="faq-card__header">
+                      <div class="faq-card__icon">
+                        <svg class="u-icon">
+                          <use xlink:href="images/icons/icons.svg#triangle-type-1"></use>
+                        </svg>
+                      </div>
+                      <button type="button" class="faq-card__btn js-faq-card-toggle">
+                        <h3 itemprop="name" class="fs-4 faq-card__title">Was unterscheidet Ihr Angebot von anderen?</h3>
+                      </button>
+                    </div>
+                    <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer" class="faq-card__dropdown">
+                      <div class="faq-card__inner">
+                        <div class="u-content faq-card__text">
+                          <p>Lorem Ipsum dolor sit amet...Lorem ipsum dolor sit amet lorem ipsum dolor sit amet. lorem ipsum dolor sit amet lorem ipsum dolor sit amet.orem ipsum dolor sit amet lorem ipsum dolor sit amet. orem ipsum dolor sit amet lorem ipsum dolor sit amet.orem ipsum dolor sit amet lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet lorem ipsum dolor sit amet. lorem ipsum dolor sit</p>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+                  <article class="faq-card faq__list-card" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                    <div class="faq-card__header">
+                      <div class="faq-card__icon">
+                        <svg class="u-icon">
+                          <use xlink:href="images/icons/icons.svg#triangle-type-1"></use>
+                        </svg>
+                      </div>
+                      <button type="button" class="faq-card__btn js-faq-card-toggle">
+                        <h3 itemprop="name" class="fs-4 faq-card__title">Was unterscheidet Ihr Angebot von anderen?</h3>
+                      </button>
+                    </div>
+                    <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer" class="faq-card__dropdown">
+                      <div class="faq-card__inner">
+                        <div class="u-content faq-card__text">
+                          <p>Lorem Ipsum dolor sit amet...Lorem ipsum dolor sit amet lorem ipsum dolor sit amet. lorem ipsum dolor sit amet lorem ipsum dolor sit amet.orem ipsum dolor sit amet lorem ipsum dolor sit amet. orem ipsum dolor sit amet lorem ipsum dolor sit amet.orem ipsum dolor sit amet lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet lorem ipsum dolor sit amet. lorem ipsum dolor sit</p>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+                  <article class="faq-card faq__list-card" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                    <div class="faq-card__header">
+                      <div class="faq-card__icon">
+                        <svg class="u-icon">
+                          <use xlink:href="images/icons/icons.svg#triangle-type-1"></use>
+                        </svg>
+                      </div>
+                      <button type="button" class="faq-card__btn js-faq-card-toggle">
+                        <h3 itemprop="name" class="fs-4 faq-card__title">Was unterscheidet Ihr Angebot von anderen?</h3>
+                      </button>
+                    </div>
+                    <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer" class="faq-card__dropdown">
+                      <div class="faq-card__inner">
+                        <div class="u-content faq-card__text">
+                          <p>Lorem Ipsum dolor sit amet...Lorem ipsum dolor sit amet lorem ipsum dolor sit amet. lorem ipsum dolor sit amet lorem ipsum dolor sit amet.orem ipsum dolor sit amet lorem ipsum dolor sit amet. orem ipsum dolor sit amet lorem ipsum dolor sit amet.orem ipsum dolor sit amet lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet lorem ipsum dolor sit amet. lorem ipsum dolor sit</p>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+                  <article class="faq-card faq__list-card is-hide" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                    <div class="faq-card__header">
+                      <div class="faq-card__icon">
+                        <svg class="u-icon">
+                          <use xlink:href="images/icons/icons.svg#triangle-type-1"></use>
+                        </svg>
+                      </div>
+                      <button type="button" class="faq-card__btn js-faq-card-toggle">
+                        <h3 itemprop="name" class="fs-4 faq-card__title">Was unterscheidet Ihr Angebot von anderen?</h3>
+                      </button>
+                    </div>
+                    <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer" class="faq-card__dropdown">
+                      <div class="faq-card__inner">
+                        <div class="u-content faq-card__text">
+                          <p>Lorem Ipsum dolor sit amet...Lorem ipsum dolor sit amet lorem ipsum dolor sit amet. lorem ipsum dolor sit amet lorem ipsum dolor sit amet.orem ipsum dolor sit amet lorem ipsum dolor sit amet. orem ipsum dolor sit amet lorem ipsum dolor sit amet.orem ipsum dolor sit amet lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet lorem ipsum dolor sit amet. lorem ipsum dolor sit</p>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+                  <article class="faq-card faq__list-card is-hide" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                    <div class="faq-card__header">
+                      <div class="faq-card__icon">
+                        <svg class="u-icon">
+                          <use xlink:href="images/icons/icons.svg#triangle-type-1"></use>
+                        </svg>
+                      </div>
+                      <button type="button" class="faq-card__btn js-faq-card-toggle">
+                        <h3 itemprop="name" class="fs-4 faq-card__title">Was unterscheidet Ihr Angebot von anderen?</h3>
+                      </button>
+                    </div>
+                    <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer" class="faq-card__dropdown">
+                      <div class="faq-card__inner">
+                        <div class="u-content faq-card__text">
+                          <p>Lorem Ipsum dolor sit amet...Lorem ipsum dolor sit amet lorem ipsum dolor sit amet. lorem ipsum dolor sit amet lorem ipsum dolor sit amet.orem ipsum dolor sit amet lorem ipsum dolor sit amet. orem ipsum dolor sit amet lorem ipsum dolor sit amet.orem ipsum dolor sit amet lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet lorem ipsum dolor sit amet. lorem ipsum dolor sit</p>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+                  <article class="faq-card faq__list-card is-hide" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                    <div class="faq-card__header">
+                      <div class="faq-card__icon">
+                        <svg class="u-icon">
+                          <use xlink:href="images/icons/icons.svg#triangle-type-1"></use>
+                        </svg>
+                      </div>
+                      <button type="button" class="faq-card__btn js-faq-card-toggle">
+                        <h3 itemprop="name" class="fs-4 faq-card__title">Was unterscheidet Ihr Angebot von anderen?</h3>
+                      </button>
+                    </div>
+                    <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer" class="faq-card__dropdown">
+                      <div class="faq-card__inner">
+                        <div class="u-content faq-card__text">
+                          <p>Lorem Ipsum dolor sit amet...Lorem ipsum dolor sit amet lorem ipsum dolor sit amet. lorem ipsum dolor sit amet lorem ipsum dolor sit amet.orem ipsum dolor sit amet lorem ipsum dolor sit amet. orem ipsum dolor sit amet lorem ipsum dolor sit amet.orem ipsum dolor sit amet lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet lorem ipsum dolor sit amet. lorem ipsum dolor sit</p>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+                  <article class="faq-card faq__list-card is-hide" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                    <div class="faq-card__header">
+                      <div class="faq-card__icon">
+                        <svg class="u-icon">
+                          <use xlink:href="images/icons/icons.svg#triangle-type-1"></use>
+                        </svg>
+                      </div>
+                      <button type="button" class="faq-card__btn js-faq-card-toggle">
+                        <h3 itemprop="name" class="fs-4 faq-card__title">Was unterscheidet Ihr Angebot von anderen?</h3>
+                      </button>
+                    </div>
+                    <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer" class="faq-card__dropdown">
+                      <div class="faq-card__inner">
+                        <div class="u-content faq-card__text">
+                          <p>Lorem Ipsum dolor sit amet...Lorem ipsum dolor sit amet lorem ipsum dolor sit amet. lorem ipsum dolor sit amet lorem ipsum dolor sit amet.orem ipsum dolor sit amet lorem ipsum dolor sit amet. orem ipsum dolor sit amet lorem ipsum dolor sit amet.orem ipsum dolor sit amet lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet lorem ipsum dolor sit amet. lorem ipsum dolor sit</p>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+                <footer class="faq__footer">
+                  <button type="button" class="js-faq-btn-moore btn-moore faq__footer-btn-moore">
+                    <span class="btn-moore__icon"></span>
+                    <span class="btn-moore__title">4+ weitere Fragen ansehen</span>
+                  </button>
+                  <form action="#" class="js-cta-form cta-form faq__footer-cta">
+                    <div class="cta-form__inner">
+                      <div class="cta-form__el-wrapper">
+                        <input type="email" name="cta_email" class="u-input u-input--size-md u-input--theme-grey cta-form__el is-show" required placeholder="Ihre E-Mail Adresse">
+                        <select name="cta_services" class="u-input u-input--size-md u-input--theme-grey cta-form__el" required>
+                          <option value="Выберите услугу" selected disabled>Выберите услугу</option>
+                          <option value="Services 1">Services 1</option>
+                          <option value="Services 1">Services 1</option>
+                          <option value="Services 2">Services 2</option>
+                          <option value="Services 3">Services 3</option>
+                        </select>
+                      </div>
+                      <button type="submit" class="btn btn--theme-accent-fill btn--size-md cta-form__btn">
+                        <span class="btn__inner">
+                          <span class="btn__title">Kurs kostenfrei starten</span>
+                        </span>
+                      </button>
+                    </div>
+                  </form>
+                </footer>
+              </div>
+            </div>
+          </section>
+          <!-- faq END -->
         </main>
         <!-- footer BEGIN -->
         @@include('html/components/footer.html', {

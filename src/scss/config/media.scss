@@ -1,3 +1,7 @@
+.d-none {
+  display: none !important;
+}
+
 @media (min-width: $xs-mf) {
   .d-xs-block {
     display: none !important;

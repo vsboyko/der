@@ -7,16 +7,12 @@
  * If we want to add a module, we should uncomment it.
  */
 
-import { SetVH } from './modules/SetVH.js';
 import BaseHelpers from './helpers/BaseHelpers.js';
-import initWOW from './modules/WOW.js';
-import { WowCounter } from './modules/WowCounter';
 import SliderInit from './modules/SliderInit.js';
 import initLightbox from './modules/LightBox.js';
-import PopupManager from './modules/PopupManager.js';
-
-// set vh
-SetVH();
+import FaqCard from './modules/FaqCard.js';
+import FaqMoreToggle from './modules/FaqMoreToggle.js';
+import VideoPlayer from './modules/VideoPlayer.js';
 
 // check webp/loaded page/device type
 BaseHelpers.checkWebpSupport();
@@ -24,9 +20,7 @@ BaseHelpers.addTouchClass();
 BaseHelpers.addLoadedClass();
 
 document.addEventListener('DOMContentLoaded', function() {
-  // wow animation
-  initWOW(190);
-  WowCounter();
+
   // slider init
   SliderInit('.js-slider-courses-init', {
     speed: 4000,
@@ -43,6 +37,19 @@ document.addEventListener('DOMContentLoaded', function() {
     allowTouchMove: false,
     loopAdditionalSlides: 3,
     on: {
+      init: function () {
+        this.slides.forEach(slide => {
+          slide.style.transition = 'none';
+        });
+
+        this.emit('slideChangeTransitionStart');
+
+        requestAnimationFrame(() => {
+          this.slides.forEach(slide => {
+            slide.style.transition = '';
+          });
+        });
+      },
       slideChangeTransitionStart: function () {
         this.slides.forEach((slide, index) => {
           const slideOffset = index - this.activeIndex;
@@ -91,7 +98,7 @@ document.addEventListener('DOMContentLoaded', function() {
         },
         on: {},
       },
-      769: {
+      992: {
         slidesPerView: 7,
         centeredSlides: true,
         loop: true,
@@ -104,8 +111,117 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     }
   });
+  SliderInit('.js-slider-marquee-init', {
+    slidesPerView: 'auto',
+    spaceBetween: 0,
+    centeredSlides: false,
+    loop: true,
+    loopedSlides: 20,
+    speed: 6000,
+    allowTouchMove: false,
+    autoplay: {
+      delay: 0,
+      disableOnInteraction: false,
+      pauseOnMouseEnter: false,
+    },
+    freeMode: true,
+    freeModeMomentum: false,
+  });
+  SliderInit('.js-slider-courses-typical-init', {
+    speed: 3000,
+    slidesPerView: 'auto',
+    centeredSlides: false,
+    loop: true,
+    spaceBetween: 0,
+    autoplay: {
+      delay: 0,
+      disableOnInteraction: false,
+      pauseOnMouseEnter: false,
+    },
+    allowTouchMove: false,
+    freeMode: true,
+    freeModeMomentum: false,
+    loopedSlides: 10,
+    breakpoints: {
+      0: {
+        spaceBetween: 0,
+      },
+      768: {
+        spaceBetween: 0,
+      }
+    }
+  });
+  SliderInit('.js-slider-reviews-video-init', {
+    slidesPerView: 3,
+    spaceBetween: 0,
+    navigation: {
+      nextEl: '.js-slider-reviews-video-next',
+      prevEl: '.js-slider-reviews-video-prev',
+    },
+    loop: true,
+    autoplay: false,
+    breakpoints: {
+      0: {
+        slidesPerView: 1.2,
+        centeredSlides: true,
+      },
+      992: {
+        slidesPerView: 3,
+        centeredSlides: false,
+      }
+    }
+  });
+
+  let reviewsSlider = null;
+  let servicesSlider = null;
+
+  function initMobileSliders() {
+    const isMobile = window.matchMedia('(max-width: 992px)').matches;
+
+    if (isMobile && !reviewsSlider) {
+      reviewsSlider = SliderInit('.js-slider-reviews-init', {
+        slidesPerView: 1.2,
+        spaceBetween: 0,
+        loop: true,
+        autoplay: false,
+        centeredSlides: true,
+      });
+    } else if (!isMobile && reviewsSlider) {
+      reviewsSlider.destroy(true, true);
+      reviewsSlider = null;
+    }
+
+    if (isMobile && !servicesSlider) {
+      servicesSlider = SliderInit('.js-slider-services-init', {
+        slidesPerView: 1.2,
+        spaceBetween: 0,
+        loop: true,
+        autoplay: false,
+        centeredSlides: true,
+      });
+    } else if (!isMobile && servicesSlider) {
+      servicesSlider.destroy(true, true);
+      servicesSlider = null;
+    }
+  }
+
+  initMobileSliders();
+
+  let resizeTimeout;
+  window.addEventListener('resize', () => {
+    clearTimeout(resizeTimeout);
+    resizeTimeout = setTimeout(initMobileSliders, 200);
+  });
+
   // lightbox image gallery
   initLightbox();
-  // modal init
-  new PopupManager();
+
+  // faq card
+  new FaqCard();
+
+  // show faq cards
+  new FaqMoreToggle();
+
+  // video playey play/pause
+  VideoPlayer();
 });
