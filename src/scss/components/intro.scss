@@ -55,8 +55,8 @@
       margin-bottom: 45rem;
     }
     span:not([class]) {
-      margin-right: 0;
-      margin-left: 0;
+      margin-right: 0 !important;
+      margin-left: 0 !important;
     }
   }
   &__cta {

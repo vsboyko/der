@@ -1320,6 +1320,7 @@
   }
   &.is-show {
     .faq-card__dropdown {
+      height: auto;
       @media (max-width: $md) {
       }
     }
