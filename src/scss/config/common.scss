@@ -158,6 +158,7 @@
   &:hover {
     text-decoration: none;
     @media (min-width: $lg-mf) {
+      transform: translate(0, -50%) scale(1.1);
     }
   }
   &:after {
@@ -280,6 +281,7 @@
   &:hover {
     .courses-card__img {
       @media (min-width: $lg-mf) {
+        transform: scale(1.08);
         box-shadow: $boxShadowBlack2;
       }
     }
@@ -967,16 +969,16 @@
       content: counter(servicesCounter);
       color: $whiteColor;
       text-shadow:
-        1rem 1rem 3px rgba($blackColor, .2),
-        2rem 2rem 3px rgba($blackColor, .2),
-        3rem 3rem 3px rgba($blackColor, .2),
-        4rem 4rem 3px rgba($blackColor, .2),
-        5rem 5rem 3px rgba($blackColor, .2),
-        6rem 6rem 3px rgba($blackColor, .2),
-        7rem 7rem 3px rgba($blackColor, .2),
-        8rem 8rem 3px rgba($blackColor, .2),
-        9rem 9rem 3px rgba($blackColor, .2),
-        10rem 10rem 3px rgba($blackColor, .2);
+        1rem 1rem 3px rgba($blackLightColor, .13),
+        2rem 2rem 3px rgba($blackLightColor, .13),
+        3rem 3rem 3px rgba($blackLightColor, .13),
+        4rem 4rem 3px rgba($blackLightColor, .13),
+        5rem 5rem 3px rgba($blackLightColor, .13),
+        6rem 6rem 3px rgba($blackLightColor, .13),
+        7rem 7rem 3px rgba($blackLightColor, .13),
+        8rem 8rem 3px rgba($blackLightColor, .13),
+        9rem 9rem 3px rgba($blackLightColor, .13),
+        10rem 10rem 3px rgba($blackLightColor, .13);
     }
   }
   &__content {

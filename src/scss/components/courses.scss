@@ -20,7 +20,7 @@
     display: flex;
     position: relative;
     @media (max-width: $md) {
-      --block-gap: var(--gap-container-);
+      --block-gap: 0;
       flex-wrap: wrap;
     }
     &:before {
@@ -49,7 +49,7 @@
   &__slider {
     margin: 0 18% 32rem 0;
     @media (max-width: $md) {
-      margin: 0 var(--gap-container-) 170rem;
+      margin: 0 var(--gap-container-) 310rem;
     }
   }
   &__content {
@@ -59,7 +59,7 @@
     align-self: center;
     @media (max-width: $md) {
       max-width: 100%;
-      padding: 40rem 0;
+      padding: 40rem var(--gap-container);
       flex-basis: 100%;
     }
   }
@@ -70,7 +70,7 @@
       margin-bottom: var(--title-gap);
     }
     span:not([class]) {
-      margin: 0;
+      margin: 0 !important;
     }
   }
   &__cta {
@@ -93,7 +93,7 @@
     position: relative;
     z-index: 2;
     @media (max-width: $md) {
-      margin: -130rem 0 -140rem;
+      margin: -250rem 0 -42rem;
       display: flex;
       justify-content: flex-end;
       z-index: -2;
@@ -103,7 +103,7 @@
       height: auto;
       display: block;
       @media (max-width: $md) {
-        width: 68%;
+        width: 76%;
       }
     }
   }
