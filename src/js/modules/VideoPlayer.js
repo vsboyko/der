@@ -14,19 +14,24 @@ export default function VideoPlayer() {
           const otherVideo = otherWrapper.querySelector('video');
           if (otherWrapper !== wrapper && otherVideo && !otherVideo.paused) {
             otherVideo.pause();
-            otherWrapper.classList.remove('is-play');
           }
         });
 
         video.play();
-        wrapper.classList.add('is-play');
       } else {
         video.pause();
-        wrapper.classList.remove('is-play');
       }
     });
 
+    video.addEventListener('play', () => {
+      wrapper.classList.add('is-play');
+    });
+
     video.addEventListener('pause', () => {
+      wrapper.classList.remove('is-play');
+    });
+
+    video.addEventListener('ended', () => {
       wrapper.classList.remove('is-play');
     });
   });

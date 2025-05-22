@@ -1099,7 +1099,7 @@
   &:hover {
     &:before {
       @media (min-width: $lg-mf) {
-        box-shadow: 0 0 0 22rem rgba($whiteColor, .6);
+        background: $greyColor;
       }
     }
     &:after {
@@ -1118,6 +1118,7 @@
     height: 116rem;
     border-radius: 50%;
     box-shadow: 0 0 0 16rem rgba($whiteColor, .7);
+    animation: pulse 1.8s infinite;
     @media (max-width: $md) {
       width: 60rem;
       height: 60rem;

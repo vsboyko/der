@@ -6,10 +6,13 @@
     padding: var(--section-gap-1) 0;
   }
   &__container {
+    display: flex;
+    flex-direction: column;
   }
   &__suptitle {
     margin: 0 0 var(--subtitle-gap);
     text-align: center;
+    order: -1;
   }
   &__title {
     margin: 0 0 var(--title-gap);
