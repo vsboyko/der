@@ -111,6 +111,13 @@
         }
       }
     }
+    &-card {
+      height: 100%;
+      min-height: 240rem;
+      @media (max-width: $md) {
+        min-height: 220rem;
+      }
+    }
   }
   &__footer {
     &-text {

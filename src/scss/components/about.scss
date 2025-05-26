@@ -44,8 +44,12 @@
     }
   }
   &__marquee {
-    margin-bottom: var(--section-gap-1);
-    .swiper {
+    margin: 0 calc(-1 * var(--slider-marquee-gap)) var(--section-gap-1);
+    @media (max-width: $md) {
+      margin-right: var(--gap-container-);
+      margin-left: var(--gap-container-);
+    }
+    .u-marquee__row {
       mix-blend-mode: screen;
     }
   }

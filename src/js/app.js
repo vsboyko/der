@@ -111,6 +111,7 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     }
   });
+
   SliderInit('.js-slider-marquee-init', {
     slidesPerView: 'auto',
     spaceBetween: 0,
@@ -127,6 +128,7 @@ document.addEventListener('DOMContentLoaded', function() {
     freeMode: true,
     freeModeMomentum: false,
   });
+
   SliderInit('.js-slider-courses-typical-init', {
     speed: 3000,
     slidesPerView: 'auto',
@@ -151,6 +153,7 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     }
   });
+
   SliderInit('.js-slider-reviews-video-init', {
     slidesPerView: 3,
     spaceBetween: 0,

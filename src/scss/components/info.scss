@@ -14,6 +14,13 @@
   }
   &__slider {
   }
+  &__list-card {
+    min-height: 270rem;
+    height: 100%;
+    @media (max-width: $md) {
+      min-height: 220rem;
+    }
+  }
   &__footer {
     margin: var(--footer-section-gap) 0 0;
     display: flex;
