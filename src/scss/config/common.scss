@@ -721,9 +721,7 @@
   &__row {
     display: flex;
     position: relative;
-    will-change: transform;
     pointer-events: none;
-    transition-timing-function: linear !important;
     @media (max-width: $md) {
       margin-right: var(--gap-container-);
       margin-left: var(--gap-container-);
@@ -733,6 +731,8 @@
     display: flex;
     justify-content: space-around;
     flex-shrink: 0;
+    animation: marquee-scroll linear infinite;
+    will-change: transform;
   }
   &__clients-logo {
     margin: 0 var(--slider-marquee-gap);
