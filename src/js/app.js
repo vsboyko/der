@@ -10,6 +10,7 @@
 import BaseHelpers from './helpers/BaseHelpers.js';
 import SliderInit from './modules/SliderInit.js';
 import initLightbox from './modules/LightBox.js';
+import InitMarquees from './modules/InitMarquees.js';
 import FaqCard from './modules/FaqCard.js';
 import FaqMoreToggle from './modules/FaqMoreToggle.js';
 import VideoPlayer from './modules/VideoPlayer.js';
@@ -198,7 +199,7 @@ document.addEventListener('DOMContentLoaded', function() {
       servicesSlider = SliderInit('.js-slider-services-init', {
         slidesPerView: 1.2,
         spaceBetween: 0,
-        loop: true,
+        loop: false,
         autoplay: false,
         centeredSlides: true,
       });
@@ -218,6 +219,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
   // lightbox image gallery
   initLightbox();
+
+  // marquee init
+  InitMarquees();
 
   // faq card
   new FaqCard();

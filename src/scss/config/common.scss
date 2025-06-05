@@ -690,6 +690,7 @@
   display: flex;
   align-items: center;
   position: relative;
+  overflow: hidden;
   &:hover {
   }
   &:before,
@@ -720,8 +721,9 @@
   &__row {
     display: flex;
     position: relative;
+    will-change: transform;
     pointer-events: none;
-    overflow: hidden;
+    transition-timing-function: linear !important;
     @media (max-width: $md) {
       margin-right: var(--gap-container-);
       margin-left: var(--gap-container-);
@@ -731,8 +733,6 @@
     display: flex;
     justify-content: space-around;
     flex-shrink: 0;
-    animation: marquee 20s linear infinite;
-    will-change: transform;
   }
   &__clients-logo {
     margin: 0 var(--slider-marquee-gap);
